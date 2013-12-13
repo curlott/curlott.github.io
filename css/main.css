@@ -1,17 +1,86 @@
+/* line 17, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 /*****************************************************************************/
 /*
 /* Common
 /*
 /*****************************************************************************/
-
 /* Global Reset */
+/* line 10, ../sass/main.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-html, body { height: 100%; }
+/* line 15, ../sass/main.scss */
+html, body {
+  height: 100%;
+}
 
+/* line 17, ../sass/main.scss */
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
@@ -19,30 +88,53 @@ body {
   text-align: center;
 }
 
+/* line 24, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+/* line 27, ../sass/main.scss */
+h1 {
+  margin-bottom: 1em;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+/* line 28, ../sass/main.scss */
+p {
+  margin: 1em 0;
+}
+
+/* line 30, ../sass/main.scss */
+a {
+  color: #00a;
+}
+
+/* line 31, ../sass/main.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 32, ../sass/main.scss */
+a:visited {
+  color: #a0a;
+}
 
 /*****************************************************************************/
 /*
 /* Home
 /*
 /*****************************************************************************/
+/* line 39, ../sass/main.scss */
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
+/* line 44, ../sass/main.scss */
 .posts li {
   line-height: 1.75em;
 }
 
+/* line 48, ../sass/main.scss */
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
@@ -54,7 +146,7 @@ a:visited { color: #a0a; }
 /* Site
 /*
 /*****************************************************************************/
-
+/* line 60, ../sass/main.scss */
 .site {
   font-size: 115%;
   text-align: justify;
@@ -63,37 +155,45 @@ a:visited { color: #a0a; }
   line-height: 1.5em;
 }
 
+/* line 68, ../sass/main.scss */
 .header a {
   font-weight: bold;
   text-decoration: none;
 }
 
+/* line 73, ../sass/main.scss */
 .title {
   display: inline-block;
   margin-bottom: 2em;
 }
 
+/* line 78, ../sass/main.scss */
 .title a {
   color: #a00;
 }
 
+/* line 82, ../sass/main.scss */
 .title a:hover {
   color: #000;
 }
 
+/* line 86, ../sass/main.scss */
 .header a.extra {
   color: #aaa;
   margin-left: 1em;
 }
 
+/* line 91, ../sass/main.scss */
 .header a.extra:hover {
   color: #000;
 }
 
+/* line 95, ../sass/main.scss */
 .meta {
   color: #aaa;
 }
 
+/* line 99, ../sass/main.scss */
 .footer {
   font-size: 80%;
   color: #666;
@@ -102,21 +202,25 @@ a:visited { color: #a0a; }
   overflow: hidden;
 }
 
+/* line 107, ../sass/main.scss */
 .footer .contact {
   float: left;
   margin-right: 3em;
 }
 
+/* line 112, ../sass/main.scss */
 .footer .contact a {
   color: #8085C1;
 }
 
+/* line 116, ../sass/main.scss */
 .footer .rss {
   margin-top: 1.1em;
   margin-right: -.2em;
   float: right;
 }
 
+/* line 122, ../sass/main.scss */
 .footer .rss img {
   border: 0;
 }
@@ -126,35 +230,40 @@ a:visited { color: #a0a; }
 /* Posts
 /*
 /*****************************************************************************/
-
 /* standard */
+/* line 133, ../sass/main.scss */
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
 }
 
+/* line 139, ../sass/main.scss */
 .post ul, .post ol {
   margin-left: 1.35em;
 }
 
+/* line 143, ../sass/main.scss */
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .2em;
 }
 
+/* line 149, ../sass/main.scss */
 .post pre code {
   border: none;
 }
 
 /* terminal */
+/* line 154, ../sass/main.scss */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
+/* line 160, ../sass/main.scss */
 .post pre.terminal code {
   background-color: #333;
 }
