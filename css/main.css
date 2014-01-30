@@ -266,6 +266,11 @@ h2 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
+h3 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 /* line 293, ../sass/main.scss */
 h1:before, h2:before {
   content: "// ";
