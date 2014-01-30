@@ -1,5 +1,5 @@
-@import "compass/reset";
-
+// @import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 /*****************************************************************************/
 /*
 /* Common
@@ -7,29 +7,377 @@
 /*****************************************************************************/
 
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 html, body { height: 100%; }
 
+// @font-face { font-family:'Inconsolata'; src:url(fonts/Inconsolata.otf); }
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', 'Courier New', monospace;
+    color: dimgray;
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+    // font-weight: bold;
+
+    background-color: white;
+    padding: 0 12px 0 0px;
+    
+    
+
+
+
+}
+#content {
+    position: relative;
+    max-width: 980px;
+    width: 96%;
+    // margin: 0 2%;
+    background-color: ghostwhite;
+    padding: 10px 0;
+    border-left: 12px solid gainsboro;
+    border-radius: 0 0 10px 0;
+    -moz-box-shadow: 0px 0px 20px #7a7a7a;
+    -webkit-box-shadow: 0px 0px 20px #7a7a7a;
+    box-shadow: 0px 0px 20px #7a7a7a;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+
+
+
+}
+hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 36px solid gainsboro;
+    border-top: 2px solid lightgrey;
+    margin: 12px 0 24px 0;
+}
+header, footer, article {
+    
+}
+header {
+    /*letter-spacing: 0.01em;*/
+    font-size: 4.5em;
+    line-height: 1.0em;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    
+    text-align: center;
+    text-transform: lowercase;
+}
+header span {
+    /*float: left;*/
+
+}
+header span.david {
+    /*color: white;*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+nav, {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        float: left;
+        
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+        
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+        margin: 12px;
+        font-size: 1.9em;
+        
+        border-top: 6px solid;
+        background-color: brown;
+        border-color: indianred;
+
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        -moz-box-shadow: 0px 3px 8px #9c9c9c;
+        -webkit-box-shadow: 0px 3px 8px #9c9c9c;
+        box-shadow: 0px 3px 8px #9c9c9c;
+        filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
+        /*Shadows look very different in IE (Only cardinal directions supported)*/
+        /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+        /*Element should have a background-color*/
+        /*All filters must be placed together*/
+        /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+        a {
+            
+            display: block;
+            padding: 0.2em;
+            color: white;
+            text-transform: uppercase;
+            display: block;
+            min-width: 1.4em;
+            text-align: center;
+
+            
+
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+
+            &:visited, &:hover, &:active {
+                color: white;
+            }
+            &.string {
+                padding: 0.31em 0.2em;
+                font-weight: bold;
+            }
+        }
+
+        /* &:nth-child(2) {
+            background-color: darkgoldenrod;
+            border-color: goldenrod;
+        }
+        &:nth-child(3) {
+            background-color: royalblue;
+            border-color: cornflowerblue;
+        } */
+
+        &:hover, &:active {
+            border-width: 3px;
+            border-bottom: 3px solid white;
+            -moz-box-shadow: inset 0px 0px 13px #555;
+            -webkit-box-shadow: inset 0px 0px 13px #555;
+            box-shadow: inset 0px 0px 13px #555;
+            /*Inner elements should not cover inner shadows*/
+            /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+            text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
+        }
+        &:active {
+            background-color: deepskyblue;
+        }
+    }
+}
+#trees {
+    // position: absolute;
+    display: none;
+}
+
+footer {
+    padding: 20px 0;
+}
+article iframe {
+    padding: 0 0 20px 0 ;
+}
+span.tag {
+    
+    border-top: 0.11em solid #EEE;
+    margin: 6px 12px;
+    float: left;
+    background-color: lightgrey;
+    letter-spacing: 0.04em;
+    line-height: 1em;
+    color: dimgray;
+    display: inline;
+
+    font-weight: bold;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 3px 3px #888;
+    -webkit-box-shadow: 0px 3px 3px #888;
+    box-shadow: 0px 3px 3px #888;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
+    /*Shadows look very different in IE (Only cardinal directions supported)*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element should have a background-color*/
+    /*All filters must be placed together*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+
+    
+
+    a, &.date {
+        display: block;
+
+        padding: 0.4em;
+        padding-top: 0.87em;
+    }
+    a:visited {
+        color: mediumseegreen!important;
+    }
+    a:hover, a:active {
+        color: darkseegreen!important;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3)!important;
+    }
+}
+span.tag:before { 
+    // font-size: 2em;
+    // content: "//"; 
+    // padding-right: 0.25em;
+
+
+}
+h1 {
+    margin: 6px 12px;
+    padding: 0 6px;
+    
+    background-color: dodgerblue;
+    color: white;
+    display: inline;
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    line-height: 1.2em; 
+    text-transform: uppercase;
+
+    float: left;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 1px 3px #000000;
+    -webkit-box-shadow: 0px 1px 3px #000000;
+    box-shadow: 0px 1px 3px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
+    /*Shadows look very different in IE (Only cardinal directions supported)*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element should have a background-color*/
+    /*All filters must be placed together*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+.excerpt {  
+    color: darkgray;
+    line-height: 1.2em;
+    font-size: 1.6em;
+}
+h2 {
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: mediumslateblue;
+    color: white;
+    letter-spacing: 0.04em;
+    line-height: 1.2em; 
+    text-transform: uppercase;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 0 6px;
+
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 1px 3px #000000;
+    -webkit-box-shadow: 0px 1px 3px #000000;
+    box-shadow: 0px 1px 3px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
+    /*Shadows look very different in IE (Only cardinal directions supported)*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element should have a background-color*/
+    /*All filters must be placed together*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+
+
+
+
+
+
+}
+h1:before, h2:before { 
+    content: "// "; 
+}
+a {
+    color: mediumseagreen;
+    text-decoration: none;
+    text-shadow: 0px 0px 12px rgba(springgreen, 0.3);
+}
+a:active, a:hover {
+    color: darkseagreen;
+    text-shadow: 0px 0px 12px rgba(springgreen, 0.1);
+}
+
+a:visited {
+    color: darkseagreen;
+    text-shadow: 0px 0px 12px rgba(springgreen, 0.1)!important;
+}
+a[href^="http:"]:after, a[href^="https:"]:after{
+    // position: absolute;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    // font-size: 11px;
+    // background-color: white;
+    // line-height: 1em;
+    color: darkseagreen;
+    content: "\f08e";
+    padding: 2px;
+    margin-left: 5px;
+    // border: 2px solid darkseagreen;
+    // border-radius:3px;
+}
+p {
+    padding-left: 12px;
+    padding-right: 8px;
+}
+p img {
+    max-width: 100%;
+    height: auto;
+}
+strong, b {
+    font-weight: bold;
+    // color: black;
+}
+pre , code, kbd, samp { 
+  color: lightgrey; 
+  font-family: 'Inconsolata', monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: darkslategray;
+  border: 1px solid #CCC; 
+
+
+
+}
+pre { 
+    white-space: pre; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    padding: 5px 12px;
+    margin: 0 12px;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: inset 0px 1px 3px #000;
+    -webkit-box-shadow: inset 0px 1px 3px #000;
+    box-shadow: inset 0px 1px 3px #000;
+    /*Inner elements should not cover inner shadows*/
+    /*Chrome renders inset shadows incorrectly with border-radius*/
+    /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+
+}
+pre code { 
+    border: 0px !important; 
+    padding: 0;
+}
+code { 
+    padding: 0 8px 0 12px; 
+}
+.clear {
+    clear: both;
+}
+
+
+
 
 /*****************************************************************************/
 /*
@@ -37,19 +385,9 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 .posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+  
 }
 
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
 
 /*****************************************************************************/
 /*
@@ -58,105 +396,38 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
 }
 
 .header a {
-  font-weight: bold;
-  text-decoration: none;
 }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a01;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
 
 .header a.extra:hover {
-  color: #000;
 }
-
-.meta {
-  color: #aaa;
-}
-
 .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
 }
-
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+.gsc-input-box {
+    height: 44px!important;
 }
-
-.footer .contact a {
-  color: #8085C1;
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    padding: 22px 27px!important;
 }
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
-}
-
 /*****************************************************************************/
 /*
 /* Posts
 /*
 /*****************************************************************************/
-
+#disqus_thread {
+    margin: 0 12px;
+}
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
 
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+@media (min-width: 1280px) { 
+    body {
+        // font-size: 24px;
+    }
 }

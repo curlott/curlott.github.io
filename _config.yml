@@ -1,9 +1,11 @@
-name: My New Jekyll Site
-title: Curlott the Webpage
+name: David Curlott
+title: "Frontend Developer, Gamer, Explorer"
 author: David Curlott
 email: curlott@gmail.com
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "underline", "highlight", "quote", "superscript"]
 pygments: true
-exclude: ["README.md", "*.scss", "*.sublime-project", "*.sublime-workspace"]
+exclude: ["README.md", "*.scss", "*.sublime-project", "*.sublime-workspace", "*.rb"]
 
 
