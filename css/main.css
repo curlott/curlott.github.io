@@ -161,15 +161,23 @@ article iframe {
 }
 
 /* line 173, ../sass/main.scss */
+div.headline-container {
+  margin: 0 12px;
+}
+/* line 175, ../sass/main.scss */
+div.headline-container h1 {
+  margin: 6px 12px 6px 0;
+}
+
+/* line 179, ../sass/main.scss */
 span.tag {
   border-top: 0.11em solid #EEE;
-  margin: 6px 12px;
-  float: left;
+  margin: 8px 3px 2px 0;
   background-color: lightgrey;
   letter-spacing: 0.04em;
-  line-height: 1em;
+  line-height: 0.5em;
   color: dimgray;
-  display: inline;
+  display: inline-block;
   font-weight: bold;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -187,34 +195,33 @@ span.tag {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 204, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 span.tag a, span.tag.date {
-  display: block;
-  padding: 0.4em;
-  padding-top: 0.87em;
+  display: inline-block;
+  padding: 0.6em;
+  padding-top: 0.77em;
 }
-/* line 210, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 span.tag a:visited {
   color: mediumseegreen !important;
 }
-/* line 213, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 span.tag a:hover, span.tag a:active {
   color: darkseegreen !important;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
-/* line 225, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 h1 {
   margin: 6px 12px;
   padding: 0 6px;
   background-color: dodgerblue;
   color: white;
-  display: inline;
+  display: inline-block;
   font-size: 2em;
   letter-spacing: 0.04em;
   line-height: 1.2em;
   text-transform: uppercase;
-  float: left;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -231,20 +238,20 @@ h1 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 254, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .excerpt {
   color: darkgray;
   line-height: 1.2em;
   font-size: 1.6em;
 }
 
-/* line 259, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 #markdown-toc {
   padding-right: 12px;
   margin: 1.6em 0;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 h2 {
   display: inline-block;
   font-size: 1.5em;
@@ -272,37 +279,37 @@ h2 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 291, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 h3, h4, h5, h6 {
   margin-left: 12px;
   margin-right: 12px;
 }
 
-/* line 296, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 h1:before, h2:before {
-  content: "// ";
+  content: "//" "\0000a0";
 }
 
-/* line 299, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 a {
   color: mediumseagreen;
   text-decoration: none;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.3);
 }
 
-/* line 304, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 a:active, a:hover {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1);
 }
 
-/* line 309, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 a:visited {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1) !important;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 a[href^="http:"]:after, a[href^="https:"]:after {
   font-family: FontAwesome;
   font-style: normal;
@@ -314,24 +321,24 @@ a[href^="http:"]:after, a[href^="https:"]:after {
   margin-left: 5px;
 }
 
-/* line 329, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 p {
   padding-left: 12px;
   padding-right: 8px;
 }
 
-/* line 333, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 p img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 337, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 341, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 pre, code, kbd, samp {
   color: lightgrey;
   font-family: 'Inconsolata', monospace;
@@ -341,7 +348,7 @@ pre, code, kbd, samp {
   border: 1px solid #CCC;
 }
 
-/* line 352, ../sass/main.scss */
+/* line 356, ../sass/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -360,18 +367,18 @@ pre {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
 }
 
-/* line 371, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 pre code {
   border: 0px !important;
   padding: 0;
 }
 
-/* line 375, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 code {
   padding: 0 8px 0 12px;
 }
 
-/* line 378, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 .clear {
   clear: both;
 }
@@ -381,7 +388,7 @@ code {
 /* Home
 /*
 /*****************************************************************************/
-/* line 393, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 blockquote {
   margin-left: 0;
   background-color: gainsboro;
@@ -390,15 +397,15 @@ blockquote {
   border-right: 12px solid;
   clear: both;
 }
-/* line 400, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 403, ../sass/main.scss */
+/* line 407, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 406, ../sass/main.scss */
+/* line 410, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -408,12 +415,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 429, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 432, ../sass/main.scss */
+/* line 436, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -423,14 +430,14 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 440, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 450, ../sass/main.scss */
+  /* line 454, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;

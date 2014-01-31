@@ -170,16 +170,21 @@ footer {
 article iframe {
     padding: 0 0 20px 0 ;
 }
+div.headline-container {
+    margin: 0 12px;
+    h1 {
+        margin: 6px 12px 6px 0;
+    }
+}
 span.tag {
     
     border-top: 0.11em solid #EEE;
-    margin: 6px 12px;
-    float: left;
+    margin: 8px 3px 2px 0;
     background-color: lightgrey;
     letter-spacing: 0.04em;
-    line-height: 1em;
+    line-height: 0.5em;
     color: dimgray;
-    display: inline;
+    display: inline-block;
 
     font-weight: bold;
     
@@ -202,10 +207,9 @@ span.tag {
     
 
     a, &.date {
-        display: block;
-
-        padding: 0.4em;
-        padding-top: 0.87em;
+        display: inline-block;
+        padding: 0.6em;
+        padding-top: 0.77em;
     }
     a:visited {
         color: mediumseegreen!important;
@@ -228,13 +232,13 @@ h1 {
     
     background-color: dodgerblue;
     color: white;
-    display: inline;
+    display: inline-block;
     font-size: 2em;
     letter-spacing: 0.04em;
     line-height: 1.2em; 
     text-transform: uppercase;
 
-    float: left;
+    // float: left;
 
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -294,7 +298,7 @@ h3, h4, h5, h6 {
     margin-right: 12px;
 }
 h1:before, h2:before { 
-    content: "// "; 
+    content: "//" "\0000a0"; 
 }
 a {
     color: mediumseagreen;
