@@ -239,6 +239,12 @@ h1 {
 }
 
 /* line 259, ../sass/main.scss */
+#markdown-toc {
+  padding-right: 12px;
+  margin: 1.6em 0;
+}
+
+/* line 263, ../sass/main.scss */
 h2 {
   display: inline-block;
   font-size: 1.5em;
@@ -266,36 +272,37 @@ h2 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-h3 {
+/* line 291, ../sass/main.scss */
+h3, h4, h5, h6 {
   margin-left: 12px;
   margin-right: 12px;
 }
 
-/* line 293, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 h1:before, h2:before {
   content: "// ";
 }
 
-/* line 296, ../sass/main.scss */
+/* line 299, ../sass/main.scss */
 a {
   color: mediumseagreen;
   text-decoration: none;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.3);
 }
 
-/* line 301, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 a:active, a:hover {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1);
 }
 
-/* line 306, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 a:visited {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1) !important;
 }
 
-/* line 310, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 a[href^="http:"]:after, a[href^="https:"]:after {
   font-family: FontAwesome;
   font-style: normal;
@@ -307,24 +314,24 @@ a[href^="http:"]:after, a[href^="https:"]:after {
   margin-left: 5px;
 }
 
-/* line 326, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 p {
   padding-left: 12px;
   padding-right: 8px;
 }
 
-/* line 330, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 p img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 334, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 338, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 pre, code, kbd, samp {
   color: lightgrey;
   font-family: 'Inconsolata', monospace;
@@ -334,7 +341,7 @@ pre, code, kbd, samp {
   border: 1px solid #CCC;
 }
 
-/* line 349, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -353,18 +360,18 @@ pre {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
 }
 
-/* line 368, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 pre code {
   border: 0px !important;
   padding: 0;
 }
 
-/* line 372, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 code {
   padding: 0 8px 0 12px;
 }
 
-/* line 375, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 .clear {
   clear: both;
 }
@@ -374,17 +381,39 @@ code {
 /* Home
 /*
 /*****************************************************************************/
+/* line 393, ../sass/main.scss */
+blockquote {
+  margin-left: 0;
+  background-color: gainsboro;
+  margin: 0;
+  border-left: 48px solid;
+  border-right: 12px solid;
+  clear: both;
+}
+/* line 400, ../sass/main.scss */
+blockquote.info {
+  border-color: khaki;
+}
+/* line 403, ../sass/main.scss */
+blockquote.warning {
+  border-color: brown;
+}
+/* line 406, ../sass/main.scss */
+blockquote.advice {
+  border-color: cornflowerblue;
+}
+
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
-/* line 409, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 412, ../sass/main.scss */
+/* line 432, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -394,9 +423,16 @@ code {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 420, ../sass/main.scss */
+/* line 440, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
+@media (min-width: 570px) {
+  /* line 450, ../sass/main.scss */
+  #markdown-toc {
+    width: 200px;
+    float: right;
+  }
+}
