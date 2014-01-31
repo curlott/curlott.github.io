@@ -25,7 +25,7 @@ feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3X
 
 ##Intro
 
-*Wie in dem Video oben sehen, sehen Sie viel*. Ha. Ha... Ha. Ich habe drei Tools benutzt, um das zum Laufen zu bringen. Diese drei werde ich hier vorstellen und auch ein bisschen was zu erklären. Ich werde dir zeigen, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. Bereit? Abfahrt!
+*Wie in dem Video oben sehen, sehen Sie nichts*. Ha. Ha... Ha. Ich habe drei Tools benutzt, um das zum Laufen zu bringen. Diese drei werde ich hier vorstellen und auch ein bisschen was zu erklären. Ich werde dir zeigen, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. Bereit? Abfahrt!
 
 > **Vorraussetzungen:** 
 > Du solltest die Basics der drei Tools schon kennen und Programmieren sollte für dich kein neuer Hut sein. Naja, du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal benutzt. 
