@@ -11,7 +11,7 @@ tags:
   - OSC
 tools:  LiveOSC
 image: lol
-feature: <iframe width="100%" src="http://www.youtube.com/embed/JF1iBrVK50A?showinfo=0&controls=1&theme=light&color=white" frameborder="0" allowfullscreen></iframe>
+feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3XHLunRFz4?showinfo=0&controls=1&theme=light&color=white" frameborder="0" allowfullscreen></iframe>
 ---
 
 * TOC
