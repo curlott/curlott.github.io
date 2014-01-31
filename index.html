@@ -11,21 +11,4 @@ title: david.curlott.com
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  <h2>Tools</h2>
-  <ul>
-  {% for tool in site.data.tools %}
-    <li>
-      <a href="#">
-        {{ tool.name }}
-      </a>
-      <ul>
-      {% for post in site.posts %}
-        {% if post.tools contains tool.name %}
-          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-  </ul>
 </div>

@@ -22,8 +22,8 @@ body {
     letter-spacing: 0.01em;
     // font-weight: bold;
 
-    background-color: white;
-    padding: 0 12px 0 0px;
+    background-color: gainsboro;
+    padding: 0 0px;
     
     
 
@@ -33,15 +33,15 @@ body {
 #content {
     position: relative;
     max-width: 980px;
-    width: 96%;
+    margin: 0 auto;
     // margin: 0 2%;
     background-color: ghostwhite;
     padding: 10px 0;
-    border-left: 12px solid gainsboro;
+    // border-left: 12px solid ghostwhite;
     border-radius: 0 0 10px 0;
-    -moz-box-shadow: 0px 0px 20px #7a7a7a;
+    /* -moz-box-shadow: 0px 0px 20px #7a7a7a;
     -webkit-box-shadow: 0px 0px 20px #7a7a7a;
-    box-shadow: 0px 0px 20px #7a7a7a;
+    box-shadow: 0px 0px 20px #7a7a7a; */
     /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 
 
@@ -190,7 +190,7 @@ span.tag {
     
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
     -moz-box-shadow: 0px 3px 3px #888;
     -webkit-box-shadow: 0px 3px 3px #888;
