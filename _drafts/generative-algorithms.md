@@ -105,7 +105,7 @@ Unser Fall ist noch nicht ganz so cool, aber beim Programmieren ist es ähnlich 
 Wenn wir jetzt unser Programm in Processing starten, dann müsste Pure Data das versprochene *C* spielen.
 
 > `makenote` kann drei Werte empfangen:
->
+
 >   - Pitch
 >       Die Tonhöhe in Halbtonschritten
 >   - Velocity
