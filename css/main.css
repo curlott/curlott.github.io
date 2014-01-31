@@ -26,8 +26,8 @@ body {
 /* line 33, ../sass/main.scss */
 #content {
   position: relative;
-  max-width: 980px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: 120px auto 0 auto;
   background-color: ghostwhite;
   padding: 10px 0;
   border-radius: 0 0 10px 0;
