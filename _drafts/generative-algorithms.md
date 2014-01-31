@@ -94,7 +94,7 @@ Wir importieren die Bibliotheken und bauen eine Verbindung auf. Die `incomingPor
 
 In der Funktion `setup()` bauen wir eine OSC Nachricht zusammen, die einmal aus dem String `"/note1"` besteht und dann noch eine `60` angeheftet bekommt. Die `60` wird gleich in Pure Data zu einem MIDI Signal. Sie wird unser *Pitch* sein und uns ein schönes *C* hören lassen. 
 
-![Setup of Pure Data Extended](/images/osc_setup_pde.PNG)
+![Setup of Pure Data Extended](/images/osc_setup_pde.png)
 
 `mrpeach` ist die OSC Bibliothek für Pure Data. `routeOSC` benutzen wir um zwischen mehreren eingehenden Signalen hin und her zu Switchen. Denk an mehrere Noten, denk an Akkorde, ... denk an Elfengesang. 
 
@@ -120,7 +120,7 @@ Um Ableton Live MIDI Signale empfangen zu lassen, musste ich [LoopBe1] installie
 
 In Ableton Live musste ich dann noch `LoopBe1` in `Preferences` > `MIDI Sync` selektieren:
 
-![MIDI Einstellungen in Ableton_Live_9](/images/ableton_live_midi_prefs.PNG)
+![MIDI Einstellungen in Ableton_Live_9](/images/ableton_live_midi_prefs.png)
 
 ##Ableton Live 9 und Processing
 
@@ -129,14 +129,14 @@ Zum Glück gibt es fleißige Hände, die nützliche Sachen schreiben und die fü
 > Ich habe bei der Installation vergessen [Python_2.5.1] zu installieren und dann hat gar nichts funktioniert. Also installiert alles brav nach der Anleitung auf der Seite von [LiveOSC].
 {:.info}
 
-![MIDI Einstellungen in Ableton Live 9 für LiveOSC](/images/ableton_live_osc_prefs.PNG) 
+![MIDI Einstellungen in Ableton Live 9 für LiveOSC](/images/ableton_live_osc_prefs.png) 
 
 > **LiveOSC** sendet über den `port 9001` und empfängt auf `port 9000`. 
 {:.advice}
 
 Ich möchte, dass so Geschichten, wie der Beat aus Ableton Live auch in Pure Data landen. Also gehen wir den Umweg zu Processing einmal über unseren Mittelsmann Pure Data:
 
-![OSC Nachrichten in Pure Data empfangen](/images/osc_setup_pde_02.PNG) 
+![OSC Nachrichten in Pure Data empfangen](/images/osc_setup_pde_02.png) 
 
 > Klick auf den Knopf um eine Verbindung aufzubauen
 {:.info}
