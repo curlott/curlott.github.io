@@ -2,7 +2,7 @@
 layout: post
 title: Audiovisuelle Installationen mit Generativen Algorithmen - Teil 1 - Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI
 excerpt: |
-  Dies war ursprünglich ein Kurs in der Uni, hat mich aber nicht locker gelassen und ich habe damit weiter herumexperementiert. Wir erstellen Fraktale, die wir Bäume aussehen und lassen sie von elfengleichen Klängen begleiten. Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended*. Abfahrt!    
+  Dies war ursprünglich ein Kurs in der Uni, hat mich aber nicht locker gelassen und ich habe damit weiter herumexperementiert. Wir erstellen Fraktale, die wir Bäume aussehen und lassen sie von elfengleichen Klängen begleiten. Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended*. Abgefahren!    
 date:   2014-01-31 18:00
 categories: Blog IMM
 tags: 
@@ -25,11 +25,10 @@ feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3X
 
 ##Intro
 
-*Wie in dem Video oben sehen, sehen Sie viel*. Ha. Ha... Ha. Ich habe drei Tools benutzt, um das zum Laufen zu bringen. Hier werde ich dir zeigen, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen.
+*Wie in dem Video oben sehen, sehen Sie viel*. Ha. Ha... Ha. Ich habe drei Tools benutzt, um das zum Laufen zu bringen. Diese drei werde ich hier vorstellen und auch ein bisschen was zu erklären. Ich werde dir zeigen, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. Bereit? Abfahrt!
 
 > **Vorraussetzungen:** 
->
-> Du solltest die Basics der drei Tools schon kennen. Aber du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal benutzt. 
+> Du solltest die Basics der drei Tools schon kennen und Programmieren sollte für dich kein neuer Hut sein. Naja, du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal benutzt. 
 {:.info}
 
 ##Das Setup
@@ -44,7 +43,6 @@ Ich habe leider keinen Mac und benutze Windows. Die drei Tools sollten allerding
     - War mein persönlicher Musiker, hat brav all das gespielt, was Pure Data ihm dirigiert hat und hat am Ende sogar selbst was dazu beigetragen und den Beat vorgegeben. *Kick, kick, kick, kick, ...*
 
 > **Ableton Live ist kein Muss**
-> 
 > Du kannst natürlich jedes andere Programm verwenden, was MIDI Signale empfangen kann. Premium ist natürlich noch die Kompatibelität mit [OSC] (*Open Sound Protocol*). 
 > Habt ihr Erfahrung mit [LMNS]? Das schaut gut aus, ist Open Source und umsonst. Lasst es mich wissen.
 {:.advice}
@@ -96,7 +94,7 @@ Wir importieren die Bibliotheken und bauen eine Verbindung auf. Die `incomingPor
 
 In der Funktion `setup()` bauen wir eine OSC Nachricht zusammen, die einmal aus dem String `"/note1"` besteht und dann noch eine `60` angeheftet bekommt. Die `60` wird gleich in Pure Data zu einem MIDI Signal. Sie wird unser *Pitch* sein und uns ein schönes *C* hören lassen. 
 
-![Setup of Pure Data Extended](/images/osc_setup_pde.png)
+![Setup of Pure Data Extended](/images/osc_setup_pde.PNG)
 
 `mrpeach` ist die OSC Bibliothek für Pure Data. `routeOSC` benutzen wir um zwischen mehreren eingehenden Signalen hin und her zu Switchen. Denk an mehrere Noten, denk an Akkorde, ... denk an Elfengesang. 
 
@@ -106,9 +104,7 @@ Unser Fall ist noch nicht ganz so cool, aber beim Programmieren ist es ähnlich 
 
 Wenn wir jetzt unser Programm in Processing starten, dann müsste Pure Data das versprochene *C* spielen.
 
-> `makenote`
->
-> Kann drei Werte empfangen:
+> `makenote` kann drei Werte empfangen:
 >
 >   - Pitch
 >       Die Tonhöhe in Halbtonschritten
@@ -124,7 +120,7 @@ Um Ableton Live MIDI Signale empfangen zu lassen, musste ich [LoopBe1] installie
 
 In Ableton Live musste ich dann noch `LoopBe1` in `Preferences` > `MIDI Sync` selektieren:
 
-![MIDI Einstellungen in Ableton_Live_9](/images/ableton_live_midi_prefs.png)
+![MIDI Einstellungen in Ableton_Live_9](/images/ableton_live_midi_prefs.PNG)
 
 ##Ableton Live 9 und Processing
 
@@ -133,14 +129,14 @@ Zum Glück gibt es fleißige Hände, die nützliche Sachen schreiben und die fü
 > Ich habe bei der Installation vergessen [Python_2.5.1] zu installieren und dann hat gar nichts funktioniert. Also installiert alles brav nach der Anleitung auf der Seite von [LiveOSC].
 {:.info}
 
-![MIDI Einstellungen in Ableton Live 9 für LiveOSC](/images/ableton_live_osc_prefs.png) 
+![MIDI Einstellungen in Ableton Live 9 für LiveOSC](/images/ableton_live_osc_prefs.PNG) 
 
 > **LiveOSC** sendet über den `port 9001` und empfängt auf `port 9000`. 
 {:.advice}
 
 Ich möchte, dass so Geschichten, wie der Beat aus Ableton Live auch in Pure Data landen. Also gehen wir den Umweg zu Processing einmal über unseren Mittelsmann Pure Data:
 
-![OSC Nachrichten in Pure Data empfangen](/images/osc_setup_pde_02.png) 
+![OSC Nachrichten in Pure Data empfangen](/images/osc_setup_pde_02.PNG) 
 
 > Klick auf den Knopf um eine Verbindung aufzubauen
 {:.info}
