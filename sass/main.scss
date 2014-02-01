@@ -410,6 +410,7 @@ blockquote {
     border-left: 48px solid;
     border-right: 12px solid;
     clear: both;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
     &.info {
         border-color: khaki;
     }

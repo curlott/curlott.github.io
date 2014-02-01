@@ -406,16 +406,17 @@ blockquote {
   border-left: 48px solid;
   border-right: 12px solid;
   clear: both;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 413, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 416, ../sass/main.scss */
+/* line 417, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 419, ../sass/main.scss */
+/* line 420, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -425,12 +426,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 442, ../sass/main.scss */
+/* line 443, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 445, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -440,14 +441,14 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 453, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 463, ../sass/main.scss */
+  /* line 464, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;

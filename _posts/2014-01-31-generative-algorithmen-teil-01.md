@@ -20,6 +20,8 @@ image:
 feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3XHLunRFz4?showinfo=0&controls=1&theme=light&color=white" frameborder="0" allowfullscreen></iframe>
 ---
 
+**Inhalt**
+
 * TOC
 {:toc}
 
@@ -161,6 +163,7 @@ void oscEvent(OscMessage theOscMessage) {
 
 Wir schicken jetzt Signale von und zu allen Programmen. Das ist cool, so haben wir Kontrolle über alles. Wir schicken sogar schon eine `60` aus Processing nach Pure Data. Dort wird sie zu einem `C` und als MIDI Signal verpackt. Das landet letztendlich in Ableton Live und wird abgespielt. Auch cool, aber es wird noch cooler: Als nächstes zeichnen wir in Processing ein paar Fraktale, die aussehen wie Bäume. Mega!
 
+Das mit dem Experte sein habe ich nie verstanden. Falls dir etwas unklar ist oder du etwas zu berichtigen oder ergänzen hast, dann würde ich mich sehr über *dein Feedback* freuen.
 
 [Processing]: http://processing.org/
 [Pure_Data]: http://puredata.info/
