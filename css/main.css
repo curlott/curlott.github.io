@@ -166,9 +166,10 @@ div.headline-container {
 /* line 175, ../sass/main.scss */
 div.headline-container h1 {
   margin: 24px 0px 16px 0;
+  display: inline-block;
 }
 
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 span.tag {
   border-top: 0.11em solid #EEE;
   margin: 8px 3px 2px 0;
@@ -194,29 +195,28 @@ span.tag {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 209, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 span.tag a, span.tag.date {
   display: inline-block;
   padding: 0.6em;
   padding-top: 0.77em;
 }
-/* line 214, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 span.tag a:visited {
   color: mediumseegreen !important;
 }
-/* line 217, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 span.tag a:hover, span.tag a:active {
   color: darkseegreen !important;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
-/* line 229, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 h1 {
   margin: 6px 12px;
   padding: 0 6px;
   background-color: dodgerblue;
   color: white;
-  display: inline-block;
   font-size: 2em;
   letter-spacing: 0.04em;
   line-height: 1.2em;
@@ -326,12 +326,23 @@ a[href^="http:"]:after, a[href^="https:"]:after {
 }
 
 /* line 336, ../sass/main.scss */
+a.anchor-block {
+  display: block;
+  color: inherit !important;
+  text-shadow: inherit !important;
+}
+/* line 340, ../sass/main.scss */
+a.anchor-block:hover, a.anchor-block:active {
+  background-color: lightgrey;
+}
+
+/* line 344, ../sass/main.scss */
 p {
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* line 340, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 p img {
   height: auto;
   margin: 24px auto;
@@ -343,12 +354,12 @@ p img {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 350, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 354, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 pre, code, kbd, samp {
   color: lightgrey;
   font-family: 'Inconsolata', monospace;
@@ -358,7 +369,7 @@ pre, code, kbd, samp {
   border: 1px solid #CCC;
 }
 
-/* line 365, ../sass/main.scss */
+/* line 373, ../sass/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -377,18 +388,18 @@ pre {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
 }
 
-/* line 384, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 pre code {
   border: 0px !important;
   padding: 0;
 }
 
-/* line 388, ../sass/main.scss */
+/* line 396, ../sass/main.scss */
 code {
   padding: 0 8px 0 12px;
 }
 
-/* line 391, ../sass/main.scss */
+/* line 399, ../sass/main.scss */
 .clear {
   clear: both;
 }
@@ -398,7 +409,7 @@ code {
 /* Home
 /*
 /*****************************************************************************/
-/* line 406, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 blockquote {
   margin-left: 0;
   background-color: gainsboro;
@@ -408,15 +419,15 @@ blockquote {
   clear: both;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 414, ../sass/main.scss */
+/* line 422, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 417, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 420, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -426,12 +437,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 443, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 446, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -441,14 +452,14 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 454, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 464, ../sass/main.scss */
+  /* line 472, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;
