@@ -108,12 +108,9 @@ Wenn wir jetzt unser Programm in Processing starten, dann müsste Pure Data das 
 
 > `makenote` kann drei Werte empfangen:
 >
->   - Pitch
->       Die Tonhöhe in Halbtonschritten
->   - Velocity
->       Die Härte des Anschlages (127 ist Maximum)
->   - Duration
->       Die Dauer des Signals in Millisekunden
+>   - **Pitch** Die Tonhöhe in Halbtonschritten
+>   - **Velocity** Die Härte des Anschlages (127 ist Maximum)
+>   - **Duration** Die Dauer des Signals in Millisekunden
 {:.advice}
 
 ##Pure Data und Ableton Live über MIDI verbinden
