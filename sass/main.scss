@@ -171,9 +171,9 @@ article iframe {
     padding: 0 0 20px 0 ;
 }
 div.headline-container {
-    margin: 0 12px;
+    margin: 36px 12px;
     h1 {
-        margin: 44px 12px 16px 0;
+        margin: 24px 0px 16px 0;
     }
 }
 span.tag {
@@ -335,11 +335,17 @@ a[href^="http:"]:after, a[href^="https:"]:after{
 }
 p {
     padding-left: 12px;
-    padding-right: 8px;
+    padding-right: 12px;
 }
 p img {
-    max-width: 100%;
     height: auto;
+    margin: 24px auto;
+    max-width: 100%;
+    display: inherit;
+    -moz-box-shadow: 0px 0px 6px #7a7a7a;
+    -webkit-box-shadow: 0px 0px 6px #7a7a7a;
+    box-shadow: 0px 0px 6px #7a7a7a;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 strong, b {
     font-weight: bold;
@@ -400,7 +406,7 @@ code {
 blockquote {
     margin-left: 0;
     background-color: gainsboro;
-    margin: 0;
+    margin: 64px 0;
     border-left: 48px solid;
     border-right: 12px solid;
     clear: both;

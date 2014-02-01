@@ -30,7 +30,7 @@ feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3X
 Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended* Bereit für Teil 1? Abfahrt!
 
 > **Voraussetzungen:** 
-> Du solltest die Basics der drei Tools schon kennen und Programmieren sollte für dich kein neuer Hut sein. Naja, du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal benutzt. 
+> Du solltest die Basics der drei Tools schon kennen und Programmieren sollte für dich kein neuer Hut sein. Naja, du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal angefasst. 
 {:.info}
 
 ##Das Setup
@@ -107,7 +107,7 @@ Unser Fall ist noch nicht ganz so cool, aber beim Programmieren ist es ähnlich 
 Wenn wir jetzt unser Programm in Processing starten, dann müsste Pure Data das versprochene *C* spielen.
 
 > `makenote` kann drei Werte empfangen:
-
+>
 >   - Pitch
 >       Die Tonhöhe in Halbtonschritten
 >   - Velocity
