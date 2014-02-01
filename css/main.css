@@ -290,7 +290,7 @@ h1:before, h2:before {
 }
 
 /* line 303, ../sass/main.scss */
-i, em {
+p > i, em {
   color: deeppink;
 }
 
