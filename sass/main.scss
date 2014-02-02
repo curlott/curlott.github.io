@@ -75,17 +75,16 @@ header {
 
 
     img {
-        width: 80%;
-        max-width: 400px;
-        height: auto;
+        
+        max-height: 400px;
+        width: auto;
         margin-top: -10px;
-        opacity:0.8;
-        filter:alpha(opacity=80); /* For IE8 and earlier */
         transition: 0.3s;
     }
     img:hover {
-        opacity:1;
-        filter:alpha(opacity=100); /* For IE8 and earlier */
+        max-height: 440px;
+        margin-bottom: -40px;
+
     
     }
 }
@@ -544,6 +543,9 @@ blockquote {
         img {
             margin-top: -300px;
             margin-bottom: -26px;
+        }
+        img:hover {
+            margin-top: -80px;
         }
     }
 }
