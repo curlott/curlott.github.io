@@ -2,11 +2,11 @@
 layout: default
 title: zweipunktlol.de 
 excerpt: |
-  Dave schreibt über das *Entwickeln* für *Web* und *andere Medien*. Dave ist außerdem kein *Spielemacher*, würde aber gerne einer sein.  
+  Dave schreibt über das *Entwickeln* für *Web* und *andere Medien*. Dave ist außerdem kein *Spielemacher*, würde aber gerne mal einer sein.  
 ---
 
 <div id="home">
-  <h1>{{ site.title }}</h1>
+  <div class="headline-container"><h1>{{ site.title }}</h1></div>
   <div class="excerpt">
     {{ page.excerpt | markdownify }}
   </div>
@@ -16,7 +16,7 @@ excerpt: |
     <p>{{ post.date | date: "%Y/%d/%m" }}</p>
     <h3>{{ post.title }}</h3>
     <div>
-        {{ post.excerpt | append: '**LIESMICH**' | markdownify }} 
+        {{ post.excerpt | markdownify | append: '<div class="readme">LIESMICH.LOL</div>' }} 
     </div>
   </a>
     {% unless forloop.last %}
