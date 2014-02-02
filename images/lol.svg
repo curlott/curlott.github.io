@@ -377,7 +377,7 @@ o1/eaImbiLvnssB/oAgz1C5h+JMEVADPBq75xnYn4mgEDiCunvtRKTNhjRIs8+FAhKsCKEdNV4LF
 A1QhInUAMcxTmAQlWOYmBXgGmAPMRI5NKOe/e3Ej9i3HgUrkzJSyHTYpSrAii0SgFLF3Lg9cDUvI
 Noh2ZAR1IhB/oE6dRwxKsCKfQmQa6QCeCFynAGY30+oHLiFTunNATeC+zsA+KTRGCVZ0YgUeA4qB
 iYioFQKTkBJn8UZ1bBBepNRV3YC4ClxA8vbUyCnKUIKlGEwc4qQ6AXGbyEIKzd6JzAH3scg09M4R
-ABv/f6b83HUs6EN24W4jhzHvF07gH0SomgKfVSgA+BdzzHQQYqCX7wAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 81.8428 53.6406)">
+ABv/f6b83HUs6EN24W4jhzHvF07gH0SomgKfVSgA+BdzzHQQYqCX7wAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 81.8428 53.6411)">
 	</image>
 </g>
 <g id="Ebene_6">
@@ -390,10 +390,10 @@ ABv/f6b83HUs6EN24W4jhzHvF07gH0SomgKfVSgA+BdzzHQQYqCX7wAAAABJRU5ErkJggg==" transf
 </g>
 <g id="Ebene_8">
 	<g>
-		<circle fill="none" stroke="#EDEDED" stroke-width="70" stroke-miterlimit="10" cx="249.327" cy="234.83" r="186.542"/>
+		<circle fill="none" stroke="#DADADA" stroke-width="70" stroke-miterlimit="10" cx="249.327" cy="234.83" r="186.542"/>
 	</g>
 	<g>
-		<circle fill="none" stroke="#DADADA" stroke-width="70" stroke-miterlimit="10" cx="249.327" cy="234.83" r="172.643"/>
+		<circle fill="none" stroke="#EDEDED" stroke-width="70" stroke-miterlimit="10" cx="249.327" cy="234.83" r="172.643"/>
 	</g>
 	<g>
 		<circle fill="none" stroke="#C6C6C6" stroke-width="70" stroke-miterlimit="10" cx="249.327" cy="234.83" r="156.572"/>
@@ -478,6 +478,18 @@ ABv/f6b83HUs6EN24W4jhzHvF07gH0SomgKfVSgA+BdzzHQQYqCX7wAAAABJRU5ErkJggg==" transf
 			c0-0.824-0.589-1.192-0.937-1.423c-0.354-0.235-1.115-0.695-1.115-1.771c0-1.208,0.985-2.28,2.302-2.28
 			c1.423,0,2.778,1.27,2.778,3.316C414.051,398.294,412.585,400.902,409.8,403.73z M411.368,384.68
 			c-1.313,0-2.363-1.036-2.363-2.297c0-1.258,1.05-2.295,2.364-2.295s2.365,1.037,2.365,2.296S412.684,384.68,411.368,384.68z"/>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
 	</g>
 </g>
 </svg>
