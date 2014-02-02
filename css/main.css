@@ -5,12 +5,19 @@
 /*
 /*****************************************************************************/
 /* Global Reset */
-/* line 12, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 body {
   padding: 0;
   margin: 0;
@@ -23,11 +30,11 @@ body {
   padding: 0 0px;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 #content {
   position: relative;
   max-width: 960px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   background-color: ghostwhite;
   padding: 10px 0;
   border-radius: 4px;
@@ -37,7 +44,7 @@ body {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 50, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 hr {
   width: 100%;
   border: 0;
@@ -46,35 +53,46 @@ hr {
   margin: 12px 0 24px 0;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 header {
-  /*letter-spacing: 0.01em;*/
-  font-size: 4.5em;
-  line-height: 1.0em;
-  color: white;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  padding-top: 20px;
   text-align: center;
-  text-transform: lowercase;
+}
+/* line 68, ../sass/main.scss */
+header img {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-top: -10px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */
+  transition: 0.3s;
+}
+/* line 77, ../sass/main.scss */
+header img:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
 }
 
-/* line 71, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 header span {
   /*float: left;*/
 }
 
-/* line 75, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 header span.david {
   /*color: white;*/
 }
 
-/* line 80, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 85, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 nav li {
   float: left;
   margin: 12px;
@@ -105,7 +123,7 @@ nav li {
       border-color: cornflowerblue;
   } */
 }
-/* line 112, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 nav li a {
   display: block;
   padding: 0.2em;
@@ -119,16 +137,16 @@ nav li a {
   border-radius: 5px;
   /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
 }
-/* line 129, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 nav li a:visited, nav li a:hover, nav li a:active {
   color: white;
 }
-/* line 132, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 nav li a.string {
   padding: 0.31em 0.2em;
   font-weight: bold;
 }
-/* line 147, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 nav li:hover, nav li:active {
   border-width: 3px;
   border-bottom: 3px solid white;
@@ -139,37 +157,37 @@ nav li:hover, nav li:active {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
   text-shadow: 0px 0px 12px #969696;
 }
-/* line 157, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 nav li:active {
   background-color: deepskyblue;
 }
 
-/* line 162, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 #trees {
   display: none;
 }
 
-/* line 167, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 footer {
   padding: 20px 0;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 article iframe {
   padding: 0 0 20px 0;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 div.headline-container {
-  margin: 36px 12px;
+  margin: 12px 12px 36px 12px;
 }
-/* line 175, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 div.headline-container h1 {
   margin: 24px 0px 16px 0;
   display: inline-block;
 }
 
-/* line 180, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 span.tag {
   border-top: 0.11em solid #EEE;
   margin: 8px 3px 2px 0;
@@ -195,23 +213,23 @@ span.tag {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 210, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 span.tag a, span.tag.date {
   display: inline-block;
   padding: 0.6em;
   padding-top: 0.77em;
 }
-/* line 215, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 span.tag a:visited {
   color: mediumseegreen !important;
 }
-/* line 218, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 span.tag a:hover, span.tag a:active {
   color: darkseegreen !important;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
-/* line 230, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 h1 {
   margin: 6px 12px;
   padding: 0 6px;
@@ -237,20 +255,20 @@ h1 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 258, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 .excerpt {
   color: darkgray;
   line-height: 1.2em;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 #markdown-toc {
   padding-right: 12px;
   margin: 1.6em 0;
 }
 
-/* line 267, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 h2 {
   display: inline-block;
   font-size: 1.5em;
@@ -278,42 +296,43 @@ h2 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 295, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 h3, h4, h5, h6 {
   margin-left: 12px;
   margin-right: 12px;
 }
 
-/* line 300, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 h1:before, h2:before {
   content: "//" "\0000a0";
 }
 
-/* line 303, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 p > i, em {
   color: deeppink;
+  font-style: italic;
 }
 
-/* line 306, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 a {
   color: mediumseagreen;
   text-decoration: none;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.3);
 }
 
-/* line 311, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 a:active, a:hover {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1);
 }
 
-/* line 316, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 a:visited {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1) !important;
 }
 
-/* line 320, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 a[href^="http:"]:after, a[href^="https:"]:after {
   font-family: FontAwesome;
   font-style: normal;
@@ -325,24 +344,24 @@ a[href^="http:"]:after, a[href^="https:"]:after {
   margin-left: 5px;
 }
 
-/* line 336, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 a.anchor-block {
   display: block;
   color: inherit !important;
   text-shadow: inherit !important;
 }
-/* line 340, ../sass/main.scss */
-a.anchor-block:hover, a.anchor-block:active {
+/* line 353, ../sass/main.scss */
+a.anchor-block:hover {
   background-color: lightgrey;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 p {
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* line 348, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 p img {
   height: auto;
   margin: 24px auto;
@@ -354,12 +373,12 @@ p img {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 358, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 362, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 pre, code, kbd, samp {
   color: lightgrey;
   font-family: 'Inconsolata', monospace;
@@ -369,7 +388,7 @@ pre, code, kbd, samp {
   border: 1px solid #CCC;
 }
 
-/* line 373, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -388,18 +407,18 @@ pre {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
 }
 
-/* line 392, ../sass/main.scss */
+/* line 405, ../sass/main.scss */
 pre code {
   border: 0px !important;
   padding: 0;
 }
 
-/* line 396, ../sass/main.scss */
+/* line 409, ../sass/main.scss */
 code {
   padding: 0 8px 0 12px;
 }
 
-/* line 399, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 .clear {
   clear: both;
 }
@@ -409,7 +428,48 @@ code {
 /* Home
 /*
 /*****************************************************************************/
-/* line 414, ../sass/main.scss */
+/* line 424, ../sass/main.scss */
+.readme {
+  margin: 0px 12px 12px 12px;
+  padding: 4px 6px;
+  display: inline-block;
+  color: white;
+  border-top: 6px solid;
+  background-color: brown;
+  border-color: indianred;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow: 0px 3px 8px #9c9c9c;
+  -webkit-box-shadow: 0px 3px 8px #9c9c9c;
+  box-shadow: 0px 3px 8px #9c9c9c;
+  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
+  /*Shadows look very different in IE (Only cardinal directions supported)*/
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element should have a background-color*/
+  /*All filters must be placed together*/
+  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+/* line 449, ../sass/main.scss */
+.readme:hover, .readme:active {
+  border-width: 3px;
+  border-bottom: 3px solid lightgrey;
+  -moz-box-shadow: inset 0px 0px 13px #555;
+  -webkit-box-shadow: inset 0px 0px 13px #555;
+  box-shadow: inset 0px 0px 13px #555;
+  /*Inner elements should not cover inner shadows*/
+  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+  text-shadow: 0px 0px 12px #969696;
+}
+/* line 459, ../sass/main.scss */
+.readme:active {
+  background-color: deepskyblue;
+}
+
+/* line 466, ../sass/main.scss */
 blockquote {
   margin-left: 0;
   background-color: gainsboro;
@@ -419,15 +479,15 @@ blockquote {
   clear: both;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 422, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 425, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 428, ../sass/main.scss */
+/* line 480, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -437,12 +497,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 451, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 454, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -452,16 +512,23 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 462, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 472, ../sass/main.scss */
+  /* line 524, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;
+  }
+}
+@media (max-height: 460px) and (min-width: 570px) {
+  /* line 535, ../sass/main.scss */
+  header img {
+    margin-top: -300px;
+    margin-bottom: -26px;
   }
 }

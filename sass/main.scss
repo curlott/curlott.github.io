@@ -7,7 +7,11 @@
 /*****************************************************************************/
 
 /* Global Reset */
-
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 html, body { height: 100%; }
 
@@ -33,7 +37,7 @@ body {
 #content {
     position: relative;
     max-width: 960px;
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     // margin: 0 2%;
     background-color: ghostwhite;
     padding: 10px 0;
@@ -58,15 +62,23 @@ header, footer, article {
     
 }
 header {
-    /*letter-spacing: 0.01em;*/
-    font-size: 4.5em;
-    line-height: 1.0em;
-    color: white;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding-top: 20px;
     
     text-align: center;
-    text-transform: lowercase;
+    img {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        margin-top: -10px;
+        opacity:0.7;
+        filter:alpha(opacity=70); /* For IE8 and earlier */
+        transition: 0.3s;
+    }
+    img:hover {
+        opacity:1;
+        filter:alpha(opacity=100); /* For IE8 and earlier */
+    
+    }
 }
 header span {
     /*float: left;*/
@@ -171,7 +183,7 @@ article iframe {
     padding: 0 0 20px 0 ;
 }
 div.headline-container {
-    margin: 36px 12px;
+    margin: 12px 12px 36px 12px;
     h1 {
         margin: 24px 0px 16px 0;
         display: inline-block;
@@ -258,7 +270,7 @@ h1 {
 .excerpt {  
     color: darkgray;
     line-height: 1.2em;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 #markdown-toc {
     padding-right: 12px;
@@ -302,6 +314,7 @@ h1:before, h2:before {
 }
 p > i, em {
     color: deeppink;
+    font-style: italic;
 }
 a {
     color: mediumseagreen;
@@ -337,7 +350,7 @@ a.anchor-block {
     display: block;
     color: inherit!important;
     text-shadow: inherit!important;
-    &:hover, &:active {
+    &:hover {
         background-color: lightgrey ;
     }
 }
@@ -408,6 +421,45 @@ code {
 /* Home
 /*
 /*****************************************************************************/
+.readme {
+    margin: 0px 12px 12px 12px;
+    padding: 4px 6px;
+    display: inline-block;
+    color: white;
+    border-top: 6px solid;
+    background-color: brown;
+    border-color: indianred;
+    font-weight: bold;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 3px 8px #9c9c9c;
+    -webkit-box-shadow: 0px 3px 8px #9c9c9c;
+    box-shadow: 0px 3px 8px #9c9c9c;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
+    /*Shadows look very different in IE (Only cardinal directions supported)*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element should have a background-color*/
+    /*All filters must be placed together*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+
+    &:hover, &:active {
+        border-width: 3px;
+        border-bottom: 3px solid lightgrey;
+        -moz-box-shadow: inset 0px 0px 13px #555;
+        -webkit-box-shadow: inset 0px 0px 13px #555;
+        box-shadow: inset 0px 0px 13px #555;
+        /*Inner elements should not cover inner shadows*/
+        /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+        text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
+    }
+    &:active {
+        background-color: deepskyblue;
+    }
+}
 .posts {
   
 }
@@ -472,5 +524,17 @@ blockquote {
     #markdown-toc {
         width: 200px;
         float: right;
+    }
+
+}
+@media (min-width: 960px) { 
+    
+}
+@media (max-height: 460px) and (min-width: 570px) { 
+    header {
+        img {
+            margin-top: -300px;
+            margin-bottom: -26px;
+        }
     }
 }
