@@ -1,547 +1,60 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
-/*****************************************************************************/
 /*
-/* Common
-/*
-/*****************************************************************************/
-/* Global Reset */
-/* line 10, ../sass/main.scss */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+Syntax error: Invalid CSS after "..., 255, 0) 70%);": expected "}", was "); /* Chrome10+..."
+        on line 70 of G:/_USER/_DOCUMENTS/GitHub/curlott.github.io/sass/main.scss
 
-/* line 16, ../sass/main.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 19, ../sass/main.scss */
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Inconsolata', 'Courier New', monospace;
-  color: dimgray;
-  font-size: 17px;
-  line-height: 1.5em;
-  letter-spacing: 0.01em;
-  background-color: gainsboro;
-  padding: 0 0px;
-}
-
-/* line 37, ../sass/main.scss */
-#content {
-  position: relative;
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: ghostwhite;
-  padding: 10px 0;
-  border-radius: 4px;
-  /* -moz-box-shadow: 0px 0px 20px #7a7a7a;
-  -webkit-box-shadow: 0px 0px 20px #7a7a7a;
-  box-shadow: 0px 0px 20px #7a7a7a; */
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-
-/* line 54, ../sass/main.scss */
-hr {
-  width: 100%;
-  border: 0;
-  border-bottom: 36px solid gainsboro;
-  border-top: 2px solid lightgrey;
-  margin: 12px 0 24px 0;
-}
-
-/* line 64, ../sass/main.scss */
-header {
-  padding-top: 20px;
-  text-align: center;
-  background: -moz-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0) 70%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(70%, rgba(255, 255, 255, 0)));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0) 70%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0) 70%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0) 70%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #ffffff 0%, rgba(255, 255, 255, 0) 70%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-}
-/* line 77, ../sass/main.scss */
-header img {
-  max-height: 400px;
-  width: auto;
-  margin-top: -10px;
-  transition: 0.3s;
-}
-/* line 84, ../sass/main.scss */
-header img:hover {
-  max-height: 440px;
-  margin-bottom: -40px;
-}
-
-/* line 91, ../sass/main.scss */
-header span {
-  /*float: left;*/
-}
-
-/* line 95, ../sass/main.scss */
-header span.david {
-  /*color: white;*/
-}
-
-/* line 100, ../sass/main.scss */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 105, ../sass/main.scss */
-nav li {
-  float: left;
-  margin: 12px;
-  font-size: 1.9em;
-  border-top: 6px solid;
-  background-color: brown;
-  border-color: indianred;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 3px 8px #9c9c9c;
-  -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-  box-shadow: 0px 3px 8px #9c9c9c;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-  /* &:nth-child(2) {
-      background-color: darkgoldenrod;
-      border-color: goldenrod;
-  }
-  &:nth-child(3) {
-      background-color: royalblue;
-      border-color: cornflowerblue;
-  } */
-}
-/* line 132, ../sass/main.scss */
-nav li a {
-  display: block;
-  padding: 0.2em;
-  color: white;
-  text-transform: uppercase;
-  display: block;
-  min-width: 1.4em;
-  text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-}
-/* line 149, ../sass/main.scss */
-nav li a:visited, nav li a:hover, nav li a:active {
-  color: white;
-}
-/* line 152, ../sass/main.scss */
-nav li a.string {
-  padding: 0.31em 0.2em;
-  font-weight: bold;
-}
-/* line 167, ../sass/main.scss */
-nav li:hover, nav li:active {
-  border-width: 3px;
-  border-bottom: 3px solid white;
-  -moz-box-shadow: inset 0px 0px 13px #555;
-  -webkit-box-shadow: inset 0px 0px 13px #555;
-  box-shadow: inset 0px 0px 13px #555;
-  /*Inner elements should not cover inner shadows*/
-  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-  text-shadow: 0px 0px 12px #969696;
-}
-/* line 177, ../sass/main.scss */
-nav li:active {
-  background-color: deepskyblue;
-}
-
-/* line 182, ../sass/main.scss */
-#trees {
-  display: none;
-}
-
-/* line 187, ../sass/main.scss */
-footer {
-  padding: 20px 0;
-}
-
-/* line 190, ../sass/main.scss */
-article iframe {
-  padding: 0 0 20px 0;
-}
-
-/* line 193, ../sass/main.scss */
-div.headline-container {
-  margin: 12px 12px 36px 12px;
-}
-/* line 195, ../sass/main.scss */
-div.headline-container h1 {
-  margin: 24px 0px 16px 0;
-  display: inline-block;
-}
-
-/* line 200, ../sass/main.scss */
-span.tag {
-  border-top: 0.11em solid #EEE;
-  margin: 8px 3px 2px 0;
-  background-color: lightgrey;
-  letter-spacing: 0.04em;
-  line-height: 0.5em;
-  color: dimgray;
-  display: inline-block;
-  font-weight: bold;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 3px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 3px 3px #888;
-  -webkit-box-shadow: 0px 3px 3px #888;
-  box-shadow: 0px 3px 3px #888;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-/* line 230, ../sass/main.scss */
-span.tag a, span.tag.date {
-  display: inline-block;
-  padding: 0.6em;
-  padding-top: 0.77em;
-}
-/* line 235, ../sass/main.scss */
-span.tag a:visited {
-  color: mediumseegreen !important;
-}
-/* line 238, ../sass/main.scss */
-span.tag a:hover, span.tag a:active {
-  color: darkseegreen !important;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important;
-}
-
-/* line 250, ../sass/main.scss */
-h1 {
-  margin: 6px 12px;
-  padding: 0 6px;
-  background-color: dodgerblue;
-  color: white;
-  font-size: 2em;
-  letter-spacing: 0.04em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 1px 3px #000000;
-  -webkit-box-shadow: 0px 1px 3px #000000;
-  box-shadow: 0px 1px 3px #000000;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-
-/* line 278, ../sass/main.scss */
-.excerpt {
-  color: darkgray;
-  line-height: 1.2em;
-  font-size: 1.5em;
-}
-
-/* line 283, ../sass/main.scss */
-#markdown-toc {
-  padding-right: 12px;
-  margin: 1.6em 0;
-}
-
-/* line 287, ../sass/main.scss */
-h2 {
-  display: inline-block;
-  font-size: 1.5em;
-  background-color: mediumslateblue;
-  color: white;
-  letter-spacing: 0.04em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  margin-left: 12px;
-  margin-right: 12px;
-  padding: 0 6px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 1px 3px #000000;
-  -webkit-box-shadow: 0px 1px 3px #000000;
-  box-shadow: 0px 1px 3px #000000;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-
-/* line 315, ../sass/main.scss */
-h3, h4, h5, h6 {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-/* line 320, ../sass/main.scss */
-h1:before, h2:before {
-  content: "//" "\0000a0";
-}
-
-/* line 323, ../sass/main.scss */
-p > i, em {
-  color: deeppink;
-  font-style: italic;
-}
-
-/* line 327, ../sass/main.scss */
-a {
-  color: mediumseagreen;
-  text-decoration: none;
-  text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.3);
-}
-
-/* line 332, ../sass/main.scss */
-a:active, a:hover {
-  color: darkseagreen;
-  text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1);
-}
-
-/* line 337, ../sass/main.scss */
-a:visited {
-  color: darkseagreen;
-  text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1) !important;
-}
-
-/* line 341, ../sass/main.scss */
-a[href^="http:"]:after, a[href^="https:"]:after {
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: darkseagreen;
-  content: "\f08e";
-  padding: 2px;
-  margin-left: 5px;
-}
-
-/* line 357, ../sass/main.scss */
-a.anchor-block {
-  display: block;
-  color: inherit !important;
-  text-shadow: inherit !important;
-}
-/* line 361, ../sass/main.scss */
-a.anchor-block:hover {
-  background-color: lightgrey;
-}
-
-/* line 365, ../sass/main.scss */
-p {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-/* line 369, ../sass/main.scss */
-p img {
-  height: auto;
-  margin: 24px auto;
-  max-width: 100%;
-  display: inherit;
-  -moz-box-shadow: 0px 0px 6px #7a7a7a;
-  -webkit-box-shadow: 0px 0px 6px #7a7a7a;
-  box-shadow: 0px 0px 6px #7a7a7a;
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-
-/* line 379, ../sass/main.scss */
-strong, b {
-  font-weight: bold;
-}
-
-/* line 383, ../sass/main.scss */
-pre, code, kbd, samp {
-  color: lightgrey;
-  font-family: 'Inconsolata', monospace;
-  font-size: 0.88em;
-  border-radius: 3px;
-  background-color: darkslategray;
-  border: 1px solid #CCC;
-}
-
-/* line 394, ../sass/main.scss */
-pre {
+Backtrace:
+G:/_USER/_DOCUMENTS/GitHub/curlott.github.io/sass/main.scss:70
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:1146:in `expected'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:1084:in `expected'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:1079:in `tok!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:536:in `block'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:529:in `ruleset'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:553:in `block_child'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:546:in `block_contents'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:82:in `stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/scss/parser.rb:27:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:342:in `_to_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+C:/Ruby200-x64/bin/compass:23:in `load'
+C:/Ruby200-x64/bin/compass:23:in `<main>'
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 5px 12px;
-  margin: 0 12px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: inset 0px 1px 3px #000;
-  -webkit-box-shadow: inset 0px 1px 3px #000;
-  box-shadow: inset 0px 1px 3px #000;
-  /*Inner elements should not cover inner shadows*/
-  /*Chrome renders inset shadows incorrectly with border-radius*/
-  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-}
-
-/* line 413, ../sass/main.scss */
-pre code {
-  border: 0px !important;
-  padding: 0;
-}
-
-/* line 417, ../sass/main.scss */
-code {
-  padding: 0 8px 0 12px;
-}
-
-/* line 420, ../sass/main.scss */
-.clear {
-  clear: both;
-}
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-/* line 432, ../sass/main.scss */
-.readme {
-  margin: 0px 12px 12px 12px;
-  padding: 4px 6px;
-  display: inline-block;
-  color: white;
-  border-top: 6px solid;
-  background-color: brown;
-  border-color: indianred;
-  font-weight: bold;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 3px 8px #9c9c9c;
-  -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-  box-shadow: 0px 3px 8px #9c9c9c;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-/* line 457, ../sass/main.scss */
-.readme:hover, .readme:active {
-  border-width: 3px;
-  border-bottom: 3px solid lightgrey;
-  -moz-box-shadow: inset 0px 0px 13px #555;
-  -webkit-box-shadow: inset 0px 0px 13px #555;
-  box-shadow: inset 0px 0px 13px #555;
-  /*Inner elements should not cover inner shadows*/
-  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-  text-shadow: 0px 0px 12px #969696;
-}
-/* line 467, ../sass/main.scss */
-.readme:active {
-  background-color: deepskyblue;
-}
-
-/* line 474, ../sass/main.scss */
-blockquote {
-  margin-left: 0;
-  background-color: gainsboro;
-  margin: 64px 0;
-  border-left: 48px solid;
-  border-right: 12px solid;
-  clear: both;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-/* line 482, ../sass/main.scss */
-blockquote.info {
-  border-color: khaki;
-}
-/* line 485, ../sass/main.scss */
-blockquote.warning {
-  border-color: brown;
-}
-/* line 488, ../sass/main.scss */
-blockquote.advice {
-  border-color: cornflowerblue;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-/* line 511, ../sass/main.scss */
-.gsc-input-box {
-  height: 44px !important;
-}
-
-/* line 514, ../sass/main.scss */
-.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
-  padding: 22px 27px !important;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-/* line 522, ../sass/main.scss */
-#disqus_thread {
-  margin: 0 12px;
-}
-
-/* standard */
-@media (min-width: 570px) {
-  /* line 532, ../sass/main.scss */
-  #markdown-toc {
-    width: 200px;
-    float: right;
-  }
-}
-@media (max-height: 460px) and (min-width: 570px) {
-  /* line 543, ../sass/main.scss */
-  header img {
-    margin-top: -300px;
-    margin-bottom: -26px;
-  }
-  /* line 547, ../sass/main.scss */
-  header img:hover {
-    margin-top: -80px;
-  }
-}
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"..., 255, 0) 70%);\": expected \"}\", was \"); /* Chrome10+...\"\A         on line 70 of G:/_USER/_DOCUMENTS/GitHub/curlott.github.io/sass/main.scss"; }
