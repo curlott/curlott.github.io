@@ -25,7 +25,7 @@ feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3X
 
 ##Intro
 
-*Wie in dem Video oben sehen, sehen Sie nichts*. Ha. Ha... Ha. Ich werde dir nach und nach die drei Tools, die ich dafür benutzt habe, näher bringen. Du bekommst gezeigt, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. 
+*Wie Sie in dem Video oben sehen, sehen Sie nichts*. Ha. Ha. Ha. ...... Ha. Ich werde dir nach und nach die drei Tools, die ich dafür benutzt habe, näher bringen. Du bekommst gezeigt, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. 
 
 Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended* Bereit für Teil 1? Abfahrt!
 
@@ -46,7 +46,7 @@ Ich habe leider keinen Mac und benutze Windows. Die drei Tools sollten allerding
 
 > **Ableton Live ist kein Muss:**
 > Du kannst natürlich jedes andere Programm verwenden, was MIDI Signale empfangen kann. Premium ist natürlich noch die Kompatibilität mit [OSC] (*Open Sound Protocol*). 
-> Habt ihr Erfahrung mit [LMNS]? Das schaut gut aus, ist Open Source und umsonst. Lasst es mich wissen.
+> Hast du Erfahrung mit [LMNS]? Das schaut gut aus, ist Open Source und umsonst. Lass es mich wissen.
 {:.advice}
 
 ##Die Kommunikation zwischen Processing und Pure Data
@@ -115,7 +115,7 @@ Wenn wir jetzt unser Programm in Processing starten, dann müsste Pure Data das 
 
 ##Pure Data und Ableton Live über MIDI verbinden
 
-Um Ableton Live MIDI Signale empfangen zu lassen, musste ich [LoopBe1] installieren. Das ist erstellt einen virtuellen MIDI Port. Was es alles gibt. Wähle einfach beim Ausgangs-MIDI-Port in Pure Data `LoopBe1` aus und es hat funktioniert. 
+Um Ableton Live MIDI Signale empfangen zu lassen, musste ich [LoopBe1] installieren. Das ist erstellt einen virtuellen MIDI Port -- Was es alles gibt. Wähle einfach beim Ausgangs-MIDI-Port in Pure Data `LoopBe1` aus und es funktioniert. 
 
 In Ableton Live musste ich dann noch `LoopBe1` in `Preferences` > `MIDI Sync` selektieren:
 
@@ -123,7 +123,7 @@ In Ableton Live musste ich dann noch `LoopBe1` in `Preferences` > `MIDI Sync` se
 
 ##Ableton Live, Processing und LiveOSC 
 
-Zum Glück gibt es fleißige Hände, die nützliche Sachen schreiben und die für die Allgemeinheit ins Netz stellen. So auch bei [LiveOSC]. Eine Bibliothek für Ableton Live, die es uns erlaubt AL über OSC zu steuern und sogar Events abzufangen. 
+Zum Glück gibt es fleißige Hände, die nützliche Sachen schreiben und die für die Allgemeinheit ins Netz stellen. So auch bei [LiveOSC], eine Bibliothek für Ableton Live, die es uns erlaubt AL über OSC zu steuern und sogar Events abzufangen. 
 
 > Ich habe bei der Installation vergessen [Python_2.5.1] zu installieren und dann hat gar nichts funktioniert. Also installiert alles brav nach der Anleitung auf der Seite von [LiveOSC].
 {:.info}
