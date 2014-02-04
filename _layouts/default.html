@@ -242,6 +242,30 @@ xmlns:article="http://ogp.me/ns/article#">
 
           ga('create', 'UA-47583990-2', 'zweipunktlol.de');
           ga('send', 'pageview');
+          
+          // iframes
+            var $iframes = $( document.querySelectorAll( 'iframe' ) );
+            
+            function iframeSizing() {
+                var $this           = $( this ),
+                    width           = $this.width(),
+                    height          = $this.height(),
+                    containerWidth      = $this.parent().width(),
+                    heightRatio     = height / width,
+                    newHeight       = heightRatio * containerWidth;
+            
+                $this.width( containerWidth );
+                $this.height( newHeight );
+            }
+            
+            function iframesEachSizing() {
+                $iframes.each( iframeSizing );
+            };
+            
+            iframesEachSizing();
+            
+            
+            $( window ).resize( iframesEachSizing );
 
         </script>   
     </body>
