@@ -97,27 +97,19 @@ header span.david {
   /*color: white;*/
 }
 
-/* line 103, ../sass/main.scss */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 108, ../sass/main.scss */
-nav li {
-  float: left;
+/* line 101, ../sass/main.scss */
+.button {
   margin: 12px;
-  font-size: 1.9em;
-  border-top: 6px solid;
+  border-top: 2px solid;
   background-color: brown;
   border-color: indianred;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 2px 2px 5px 5px;
+  -webkit-border-radius: 2px 2px 5px 5px;
+  border-radius: 2px 2px 5px 5px;
   /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 3px 8px #9c9c9c;
-  -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-  box-shadow: 0px 3px 8px #9c9c9c;
+  -moz-box-shadow: 0px 0px 2px #9c9c9c;
+  -webkit-box-shadow: 0px 0px 2px #9c9c9c;
+  box-shadow: 0px 0px 2px #9c9c9c;
   filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
   /*Shadows look very different in IE (Only cardinal directions supported)*/
@@ -125,6 +117,57 @@ nav li {
   /*Element should have a background-color*/
   /*All filters must be placed together*/
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+/* line 122, ../sass/main.scss */
+.button a {
+  display: block;
+  padding: 0.2em;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  min-width: 1.4em;
+  text-align: center;
+  -moz-border-radius: 2px 2px 5px 5px;
+  -webkit-border-radius: 2px 2px 5px 5px;
+  border-radius: 2px 2px 5px 5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+}
+/* line 139, ../sass/main.scss */
+.button a:visited, .button a:hover, .button a:active {
+  color: white;
+}
+/* line 142, ../sass/main.scss */
+.button a.string {
+  padding: 0.31em 0.2em;
+  font-weight: bold;
+}
+/* line 148, ../sass/main.scss */
+.button:hover, .button:active {
+  border-width: 0px;
+  border-bottom: 1px solid indianred;
+  -moz-box-shadow: inset 0px 0px 13px #555;
+  -webkit-box-shadow: inset 0px 0px 13px #555;
+  box-shadow: inset 0px 0px 13px #555;
+  /*Inner elements should not cover inner shadows*/
+  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+  text-shadow: 0px 0px 12px #969696;
+}
+/* line 158, ../sass/main.scss */
+.button:active {
+  background-color: deepskyblue;
+}
+
+/* line 163, ../sass/main.scss */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 168, ../sass/main.scss */
+nav li {
+  float: left;
+  margin: 12px;
+  font-size: 1.9em;
   /* &:nth-child(2) {
       background-color: darkgoldenrod;
       border-color: goldenrod;
@@ -134,71 +177,33 @@ nav li {
       border-color: cornflowerblue;
   } */
 }
-/* line 135, ../sass/main.scss */
-nav li a {
-  display: block;
-  padding: 0.2em;
-  color: white;
-  text-transform: uppercase;
-  display: block;
-  min-width: 1.4em;
-  text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-}
-/* line 152, ../sass/main.scss */
-nav li a:visited, nav li a:hover, nav li a:active {
-  color: white;
-}
-/* line 155, ../sass/main.scss */
-nav li a.string {
-  padding: 0.31em 0.2em;
-  font-weight: bold;
-}
-/* line 170, ../sass/main.scss */
-nav li:hover, nav li:active {
-  border-width: 3px;
-  border-bottom: 3px solid white;
-  -moz-box-shadow: inset 0px 0px 13px #555;
-  -webkit-box-shadow: inset 0px 0px 13px #555;
-  box-shadow: inset 0px 0px 13px #555;
-  /*Inner elements should not cover inner shadows*/
-  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-  text-shadow: 0px 0px 12px #969696;
-}
-/* line 180, ../sass/main.scss */
-nav li:active {
-  background-color: deepskyblue;
-}
 
-/* line 185, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 #trees {
   display: none;
 }
 
-/* line 190, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 footer {
   padding: 20px 0;
 }
 
-/* line 193, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 article iframe {
   padding: 0;
 }
 
-/* line 196, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 div.headline-container {
   margin: 12px 12px 36px 12px;
 }
-/* line 198, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 div.headline-container h1 {
   margin: 24px 0px 16px 0;
   display: inline-block;
 }
 
-/* line 203, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 span.tag {
   border-top: 0.11em solid #EEE;
   margin: 8px 3px 2px 0;
@@ -224,23 +229,23 @@ span.tag {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 233, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 span.tag a, span.tag.date {
   display: inline-block;
   padding: 0.6em;
   padding-top: 0.77em;
 }
-/* line 238, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 span.tag a:visited {
   color: mediumseegreen !important;
 }
-/* line 241, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 span.tag a:hover, span.tag a:active {
   color: darkseegreen !important;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
-/* line 253, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 h1 {
   margin: 6px 12px;
   padding: 0 6px;
@@ -266,20 +271,20 @@ h1 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 281, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 .excerpt {
   color: darkgray;
   line-height: 1.2em;
   font-size: 1.5em;
 }
 
-/* line 286, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 #markdown-toc {
   padding-right: 12px;
   margin: 1.6em 0;
 }
 
-/* line 290, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 h2 {
   display: inline-block;
   font-size: 1.5em;
@@ -307,43 +312,43 @@ h2 {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 318, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 h3, h4, h5, h6 {
   margin-left: 12px;
   margin-right: 12px;
 }
 
-/* line 323, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 h1:before, h2:before {
   content: "//" "\0000a0";
 }
 
-/* line 326, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 p > i, em {
   color: deeppink;
   font-style: italic;
 }
 
-/* line 330, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 a {
   color: mediumseagreen;
   text-decoration: none;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.3);
 }
 
-/* line 335, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 a:active, a:hover {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1);
 }
 
-/* line 340, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 a:visited {
   color: darkseagreen;
   text-shadow: 0px 0px 12px rgba(0, 255, 127, 0.1) !important;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 a[href^="http:"]:after, a[href^="https:"]:after {
   font-family: FontAwesome;
   font-style: normal;
@@ -355,24 +360,24 @@ a[href^="http:"]:after, a[href^="https:"]:after {
   margin-left: 5px;
 }
 
-/* line 360, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 a.anchor-block {
   display: block;
   color: inherit !important;
   text-shadow: inherit !important;
 }
-/* line 364, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 a.anchor-block:hover {
   background-color: lightgrey;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 p {
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* line 372, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 p img {
   height: auto;
   margin: 24px auto;
@@ -384,12 +389,12 @@ p img {
   /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 }
 
-/* line 382, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 386, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 pre, code, kbd, samp {
   color: lightgrey;
   font-family: 'Inconsolata', monospace;
@@ -399,7 +404,7 @@ pre, code, kbd, samp {
   border: 1px solid #CCC;
 }
 
-/* line 397, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -418,18 +423,18 @@ pre {
   /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
 }
 
-/* line 416, ../sass/main.scss */
+/* line 422, ../sass/main.scss */
 pre code {
   border: 0px !important;
   padding: 0;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 426, ../sass/main.scss */
 code {
   padding: 0 8px 0 12px;
 }
 
-/* line 423, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 .clear {
   clear: both;
 }
@@ -439,55 +444,23 @@ code {
 /* Home
 /*
 /*****************************************************************************/
-/* line 435, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 .readme {
   margin: 0px 12px 12px 12px;
   padding: 4px 6px;
   display: inline-block;
   color: white;
-  border-top: 6px solid;
-  background-color: brown;
-  border-color: indianred;
   font-weight: bold;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-  -moz-box-shadow: 0px 3px 8px #9c9c9c;
-  -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-  box-shadow: 0px 3px 8px #9c9c9c;
-  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
-  /*Shadows look very different in IE (Only cardinal directions supported)*/
-  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-  /*Element should have a background-color*/
-  /*All filters must be placed together*/
-  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-}
-/* line 460, ../sass/main.scss */
-.readme:hover, .readme:active {
-  border-width: 3px;
-  border-bottom: 3px solid lightgrey;
-  -moz-box-shadow: inset 0px 0px 13px #555;
-  -webkit-box-shadow: inset 0px 0px 13px #555;
-  box-shadow: inset 0px 0px 13px #555;
-  /*Inner elements should not cover inner shadows*/
-  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-  text-shadow: 0px 0px 12px #969696;
-}
-/* line 470, ../sass/main.scss */
-.readme:active {
-  background-color: deepskyblue;
 }
 
-/* line 474, ../sass/main.scss */
+/* line 448, ../sass/main.scss */
 span.post-date {
   padding-top: 1em;
   margin: 0 12px;
   display: block;
 }
 
-/* line 483, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 blockquote {
   margin-left: 0;
   background-color: gainsboro;
@@ -497,15 +470,15 @@ blockquote {
   clear: both;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 491, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 494, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 497, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -515,12 +488,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 520, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 523, ../sass/main.scss */
+/* line 497, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -530,26 +503,26 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 531, ../sass/main.scss */
+/* line 505, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 541, ../sass/main.scss */
+  /* line 515, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;
   }
 }
 @media (max-height: 460px) and (min-width: 570px) {
-  /* line 552, ../sass/main.scss */
+  /* line 526, ../sass/main.scss */
   header img {
     margin-top: -300px;
     margin-bottom: -26px;
   }
-  /* line 556, ../sass/main.scss */
+  /* line 530, ../sass/main.scss */
   header img:hover {
     margin-top: -80px;
   }

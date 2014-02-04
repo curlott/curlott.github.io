@@ -98,7 +98,67 @@ header span {
 header span.david {
     /*color: white;*/
 }
+.button {
+    margin: 12px;
+    
+    border-top: 2px solid;
+    background-color: brown;
+    border-color: indianred;
 
+    -moz-border-radius: 2px 2px 5px 5px;
+    -webkit-border-radius: 2px 2px 5px 5px;
+    border-radius: 2px 2px 5px 5px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 0px 2px #9c9c9c;
+    -webkit-box-shadow: 0px 0px 2px #9c9c9c;
+    box-shadow: 0px 0px 2px #9c9c9c;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
+    /*Shadows look very different in IE (Only cardinal directions supported)*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element should have a background-color*/
+    /*All filters must be placed together*/
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    a {
+        
+        display: block;
+        padding: 0.2em;
+        color: white;
+        text-transform: uppercase;
+        display: block;
+        min-width: 1.4em;
+        text-align: center;
+
+        
+
+        -moz-border-radius: 2px 2px 5px 5px;
+        -webkit-border-radius: 2px 2px 5px 5px;
+        border-radius: 2px 2px 5px 5px;
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+
+        &:visited, &:hover, &:active {
+            color: white;
+        }
+        &.string {
+            padding: 0.31em 0.2em;
+            font-weight: bold;
+        }
+    }
+
+    &:hover, &:active {
+        border-width: 0px;
+        border-bottom: 1px solid indianred;
+        -moz-box-shadow: inset 0px 0px 13px #555;
+        -webkit-box-shadow: inset 0px 0px 13px #555;
+        box-shadow: inset 0px 0px 13px #555;
+        /*Inner elements should not cover inner shadows*/
+        /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+        text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
+    }
+    &:active {
+        background-color: deepskyblue;
+    }
+}
 nav, {
     ul {
         list-style: none;
@@ -114,49 +174,7 @@ nav, {
         margin: 12px;
         font-size: 1.9em;
         
-        border-top: 6px solid;
-        background-color: brown;
-        border-color: indianred;
-
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-        -moz-box-shadow: 0px 3px 8px #9c9c9c;
-        -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-        box-shadow: 0px 3px 8px #9c9c9c;
-        filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
-        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
-        /*Shadows look very different in IE (Only cardinal directions supported)*/
-        /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-        /*Element should have a background-color*/
-        /*All filters must be placed together*/
-        /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-        a {
-            
-            display: block;
-            padding: 0.2em;
-            color: white;
-            text-transform: uppercase;
-            display: block;
-            min-width: 1.4em;
-            text-align: center;
-
-            
-
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-            /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-
-            &:visited, &:hover, &:active {
-                color: white;
-            }
-            &.string {
-                padding: 0.31em 0.2em;
-                font-weight: bold;
-            }
-        }
+        
 
         /* &:nth-child(2) {
             background-color: darkgoldenrod;
@@ -167,19 +185,7 @@ nav, {
             border-color: cornflowerblue;
         } */
 
-        &:hover, &:active {
-            border-width: 3px;
-            border-bottom: 3px solid white;
-            -moz-box-shadow: inset 0px 0px 13px #555;
-            -webkit-box-shadow: inset 0px 0px 13px #555;
-            box-shadow: inset 0px 0px 13px #555;
-            /*Inner elements should not cover inner shadows*/
-            /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-            text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
-        }
-        &:active {
-            background-color: deepskyblue;
-        }
+        
     }
 }
 #trees {
@@ -437,39 +443,7 @@ code {
     padding: 4px 6px;
     display: inline-block;
     color: white;
-    border-top: 6px solid;
-    background-color: brown;
-    border-color: indianred;
     font-weight: bold;
-
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-    -moz-box-shadow: 0px 3px 8px #9c9c9c;
-    -webkit-box-shadow: 0px 3px 8px #9c9c9c;
-    box-shadow: 0px 3px 8px #9c9c9c;
-    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 180, color = '#9c9c9c');
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 180, Color = '#9c9c9c')";
-    /*Shadows look very different in IE (Only cardinal directions supported)*/
-    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-    /*Element should have a background-color*/
-    /*All filters must be placed together*/
-    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-
-    &:hover, &:active {
-        border-width: 3px;
-        border-bottom: 3px solid lightgrey;
-        -moz-box-shadow: inset 0px 0px 13px #555;
-        -webkit-box-shadow: inset 0px 0px 13px #555;
-        box-shadow: inset 0px 0px 13px #555;
-        /*Inner elements should not cover inner shadows*/
-        /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
-        text-shadow: 0px 0px 12px rgba(150, 150, 150, 1);
-    }
-    &:active {
-        background-color: deepskyblue;
-    }
 }
 span.post-date {
   padding-top: 1em;
