@@ -17,7 +17,7 @@ tools:
   - Pure Data
   - Ableton Live
 image: lol
-feature: <iframe width="100%" height="350" src="http://www.youtube.com/embed/t3XHLunRFz4?showinfo=0&controls=1&theme=light&color=white" frameborder="0" allowfullscreen></iframe>
+feature: <iframe width="960" height="350" src="http://www.youtube.com/embed/t3XHLunRFz4?showinfo=0&controls=1&theme=light&color=white" frameborder="0" allowfullscreen></iframe>
 ---
 
 * TOC
