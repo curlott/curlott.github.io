@@ -27,7 +27,7 @@ feature: <iframe width="960" height="336" src="http://www.youtube.com/embed/t3XH
 
 *Wie Sie in dem Video oben sehen, sehen Sie nichts*. Ha. Ha. Ha. ...... Ha. Ich werde dir nach und nach die drei Tools, die ich dafür benutzt habe, näher bringen. Du bekommst gezeigt, wie man OSC und MIDI benutzt, um [Processing], [Pure_Data] und [Ableton_Live_9] miteinander sprechen zu lassen. 
 
-Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended* Bereit für Teil 1? Abfahrt!
+Dieser Artikel besteht aus drei Teilen: *Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI*, *Baum-Fraktale Zeichnen in Processing* und *Akkorde generieren in Pure Data Extended* Bereit für Teil 1? Abfahrt!
 
 > **Voraussetzungen:** 
 > Du solltest die Basics der drei Tools schon kennen und Programmieren sollte für dich kein neuer Hut sein. Naja, du wirst es schon merken, wenn es zu verrückt wird. Aber: Ich selbst habe hier [Pure_Data] und [Processing] zum ersten mal angefasst. 
