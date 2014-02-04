@@ -480,13 +480,13 @@ code {
   background-color: deepskyblue;
 }
 
-/* line 475, ../sass/main.scss */
-.posts span.post-date {
+/* line 474, ../sass/main.scss */
+span.post-date {
   padding-top: 1em;
   margin: 0 12px;
 }
 
-/* line 481, ../sass/main.scss */
+/* line 482, ../sass/main.scss */
 blockquote {
   margin-left: 0;
   background-color: gainsboro;
@@ -496,15 +496,15 @@ blockquote {
   clear: both;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 489, ../sass/main.scss */
+/* line 490, ../sass/main.scss */
 blockquote.info {
   border-color: khaki;
 }
-/* line 492, ../sass/main.scss */
+/* line 493, ../sass/main.scss */
 blockquote.warning {
   border-color: brown;
 }
-/* line 495, ../sass/main.scss */
+/* line 496, ../sass/main.scss */
 blockquote.advice {
   border-color: cornflowerblue;
 }
@@ -514,12 +514,12 @@ blockquote.advice {
 /* Site
 /*
 /*****************************************************************************/
-/* line 518, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 .gsc-input-box {
   height: 44px !important;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 522, ../sass/main.scss */
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   padding: 22px 27px !important;
 }
@@ -529,26 +529,26 @@ blockquote.advice {
 /* Posts
 /*
 /*****************************************************************************/
-/* line 529, ../sass/main.scss */
+/* line 530, ../sass/main.scss */
 #disqus_thread {
   margin: 0 12px;
 }
 
 /* standard */
 @media (min-width: 570px) {
-  /* line 539, ../sass/main.scss */
+  /* line 540, ../sass/main.scss */
   #markdown-toc {
     width: 200px;
     float: right;
   }
 }
 @media (max-height: 460px) and (min-width: 570px) {
-  /* line 550, ../sass/main.scss */
+  /* line 551, ../sass/main.scss */
   header img {
     margin-top: -300px;
     margin-bottom: -26px;
   }
-  /* line 554, ../sass/main.scss */
+  /* line 555, ../sass/main.scss */
   header img:hover {
     margin-top: -80px;
   }
