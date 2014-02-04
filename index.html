@@ -16,7 +16,7 @@ og-excerpt: |
   <hr>
   {% for post in site.posts %}
   <a class="anchor-block" href="{{ post.url }}">
-    <p>{{ post.date | date: "%Y/%d/%m" }}</p>
+    <span class="post-date">{{ post.date | date: "%Y/%d/%m" }}</span>
     <h3>{{ post.title }}</h3>
     <div>
         {{ post.excerpt | markdownify | append: '<div class="readme">LIESMICH.LOL</div>' }} 
