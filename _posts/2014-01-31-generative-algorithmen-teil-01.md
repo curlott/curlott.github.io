@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generative Algorithmen - Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI.
+title: Generative Algorithmen - Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI
 excerpt: |
   Dies ist der erste Teil des Artikels *Audiovisuelle Installationen mit Generativen Algorithmen*. Wir erstellen Fraktale, die wie Bäume aussehen und lassen sie von elfengleichen Klängen begleiten. Abgefahren!
 date: 2014-01-31 18:00
