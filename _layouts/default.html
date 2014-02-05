@@ -269,6 +269,14 @@ xmlns:article="http://ogp.me/ns/article#">
             
             $( window ).resize( iframesEachSizing );
 
+            $('.anchor-block').hover(function () {
+              $(this).find('.button').addClass('button-pressed');
+            }, function () {
+              $(this).find('.button').removeClass('button-pressed');
+            });
+
+            console.log($('.gsc-search-button').addClass('button'));
+
         </script>   
     </body>
 </html>
