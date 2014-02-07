@@ -127,12 +127,6 @@ Wieder einfach. `timeToBranch` und `timeSpentGrowing` sind unser Timer und veran
 
 
 
-
-
-
-
-
-
 [Sublime_Text]: http://sublimetext.com/
 [Processing]: http://processing.org/
 [Pure_Data]: http://puredata.info/
@@ -151,5 +145,3 @@ Wieder einfach. `timeToBranch` und `timeSpentGrowing` sind unser Timer und veran
 [OOP]: http://de.wikipedia.org/wiki/Objektorientierte_Programmierung
 
 [Teil_01]: /blog/imm/2014/01/31/generative-algorithmen-teil-01.html "Setup der Kommunikation zwischen Processing, Pure Data und Ableton Live über OSC und MIDI"
-
-
