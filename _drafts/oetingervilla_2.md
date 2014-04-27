@@ -2,6 +2,7 @@
 layout: post
 title: Projekt: OetingerVilla.de
 excerpt: Oetinger Villa Darmstadt, ein Projekt das wuchs und wuchs.
+image: /images/og_image.jpg
 date:   2014-05-01 10:00:00
 categories: Blog Projekte
 tags: 
