@@ -73,7 +73,7 @@ Erst einmal ging es darum, die Daten zu analysieren, welche letztendlich auf der
 
 ##Design
 
-Nach einem gescheiterten Prototyp mit *Akkordeoneffekt* (Eine Liste mit den Titeln der Termine, Details fahren sich aus, sobald man auf einen Termin klickt), kam ich auf das jetzige Layout. Hart abgekupfert von *Apple Finder* und *GMAIL*, aber nach langem Nachdenken war es das passendste Layout um alle Daten Problemlos darzustellen. Vor allem beim Programm mit der vertikalen Zeitachse: Hier kann man nun sehr entspannt von Termin zu Termin hüpfen und schauen was die Villa in der Zukunft so zu bieten hat.
+Nach einem gescheiterten Prototyp mit *Akkordeoneffekt* (Eine Liste mit den Titeln der Termine, Details fahren sich aus, sobald man auf einen Termin klickt), kam ich auf das jetzige Layout. Hart abgekupfert von *Apple Finder* und *GMAIL*, aber nach langem Nachdenken war es das passendste Layout um alle Daten Problemlos darzustellen. Vor allem beim Programm mit der vertikalen Zeitachse: Hier kann man nun sehr entspannt von Termin zu Termin hüpfen und schauen was die Villa in der Zukunft so zu bieten hat. Aber auch bei den anderen Inhalten hat sich diese Art der Darstellung für gut befunden.
 
 ##Wordpress
 
