@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Projekt: OetingerVilla.de
-excerpt: Die Oetinger Villa Darmstadt ist/war *ein großes Projekt* bei dem ich viel gelernt habe.
+excerpt: Oetinger Villa Darmstadt, ein Projekt das wuchs und wuchs.
 date:   2014-05-01 10:00:00
 categories: Blog Projekte
 tags: 
@@ -18,19 +18,25 @@ tags:
 
 #Intro
 
-Die Oetinger Villa ist Darmstadts Jugend- und Kulturzentrum in Selbstverwaltung. Für mich ist die *Villa* seit über 10 Jahren ein Ort der Inspiration. Ohne Villa hätte ich viele Sachen nicht erlebt, welche mich in meinem Leben geprägt haben. Sei es Musik, Menschen oder die Attitude des Selbermachens. *DIE OR DIE*, lol.
+Die Oetinger Villa ist Darmstadts Jugend- und Kulturzentrum in Selbstverwaltung. Für mich ist die *Villa* seit über 10 Jahren ein Ort der Inspiration. Ohne Villa hätte ich viele Sachen nicht erlebt, welche mich in meinem Leben geprägt haben. Sei es Musik, Menschen oder die Attitude des Selbermachens. *DIE OR DIE*, lol. Im ernst jetzt.
+
+##Die graue statische Seite
 
 [bild graue seite]
 
-Als ich angefangen habe die Villa zu besuchen war ich so ca. 15 Jahre. Damals war die Homepage noch mit *MS Frontpage* gebaut. Frontpage kann man als das wix.com *hrhrhrhrhrchhrch* der 2000er bezeichnen. Als würde man mit Word seine Internetseite bauen (was man schrecklicher weise auch kann).
+Als ich angefangen habe die Villa zu besuchen war ich so ca. 15 Jahre alt. Damals war die Homepage noch mit *MS Frontpage* gebaut. Frontpage kann man als das wix.com *hrhrhrhrhrchhrch* der 2000er bezeichnen. Als würde man mit Word seine Internetseite bauen (was man schrecklicher weise auch kann).
 
 Zurück zu damals. Damals bestand sie quasi nur aus reinem HTML und die Leute die Frontpage beherrschten, haben sich um die Pflege der Homepage gekümmert. 
+
+##Die lila Seite mit CMS
 
 [bild alte seite]
 
 Später kam dann durch eine Nacht und Nebel Aktion eine Joomla-Seite, welches die Pflege um einiges erleichterte. Leider sah das ganze gar so schön aus. Die Joomla Seite wuchs und wucherte und war bis jetzt die Anlaufstelle für alle Internetkids.
 
-Wie gesagt, seit über 10 Jahren ist die Villa ein wundervoller Ort für mich, der mir sehr viel gegeben hat. Dieses Geben entstand durch Leute die sich ehrenamtlich darum kümmern, dass der Laden läuft. Jetzt war es Zeit einmal was zurück zu geben.
+##DIY
+
+Wie gesagt, seit über 10 Jahren ist die Villa ein wundervoller Ort für mich, der mir sehr viel gegeben hat. Dieses Geben entstand durch Leute die sich ehrenamtlich darum kümmern, dass der Laden läuft. Jetzt war es an der Zeit mal was zurück zu geben.
 
 #Idee
 
@@ -38,7 +44,7 @@ Wie gesagt, seit über 10 Jahren ist die Villa ein wundervoller Ort für mich, d
 
 Die Seite sollte sich problemlos auf allen Geräten bedienen lassen. Keine Einschränkungen der Bedienung aufgrund des Geräts. 
 
-Meine Ziele
+Meine Ziele für die Bedienbarkeit
 
 - Alle aktuellen Browser
 - iOS Safari
@@ -73,14 +79,25 @@ Erst einmal ging es darum, die Daten zu analysieren, welche letztendlich auf der
 
 ##Design
 
-Nach einem gescheiterten Prototyp mit *Akkordeoneffekt* (Eine Liste mit den Titeln der Termine, Details fahren sich aus, sobald man auf einen Termin klickt), kam ich auf das jetzige Layout. Hart abgekupfert von *Apple Finder* und *GMAIL*, aber nach langem Nachdenken war es das passendste Layout um alle Daten Problemlos darzustellen. Vor allem beim Programm mit der vertikalen Zeitachse: Hier kann man nun sehr entspannt von Termin zu Termin hüpfen und schauen was die Villa in der Zukunft so zu bieten hat. Aber auch bei den anderen Inhalten hat sich diese Art der Darstellung für gut befunden.
+Nach einem gescheiterten Prototyp mit *Akkordeoneffekt* (Eine Liste mit den Titeln der Termine, Details fahren sich aus, sobald man auf einen Termin klickt), kam ich auf das jetzige Layout. Hart abgekupfert von *Apple Finder* und *GMAIL*, aber nach langem Nachdenken war es das passendste Layout um alle Daten Problemlos darzustellen. Vor allem beim Programm mit der vertikalen Zeitachse: Hier kann man nun sehr entspannt von Termin zu Termin hüpfen und schauen was die Villa in der Zukunft so zu bieten hat. Aber auch bei den anderen Inhalten hat sich diese Art der Darstellung bewährt.
 
 ##Wordpress
 
-
+Wie schon oben erwähnt, habe ich mich für Wordpress entschieden. Ich wollte kein neues CMS lernen und ich wollte mich an den unzähligen Plugins bedienen, die mir einiges an Arbeit ersparen.
 
 ###Frontend
 
+Letztendlich habe ich ein eigenständiges Template gebaut, welches genau das macht, was ich sage. böaljklkadjsfdljslknsda
+
+ogp
+
+icon
+
+
+
 ###Backend
 
+Unzerstörbar für den unfähigen Benutzer. ökads#äölasölädksdäksaölk
+
+monatsdesign
 
