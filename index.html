@@ -3,7 +3,7 @@ layout: default
 title: zweipunktlol.de 
 image: /images/og_image.jpg
 excerpt: |
-  Dave entwickelt für das *Web* und *andere Medien*. Dave ist außerdem noch kein *Spielemacher* <i class="fa fa-gamepad"></i>  
+  Dave entwickelt für das *Web* und *andere Medien*. <i class="fa fa-gamepad"></i>  
 og-excerpt: |
   Dave schreibt über das Entwickeln für Web und andere Medien. Dave ist außerdem kein Spielemacher, würde aber gerne mal einer sein.
 ---
@@ -16,14 +16,17 @@ og-excerpt: |
   <hr>
   {% for post in site.posts %}
   <a class="anchor-block" href="{{ post.url }}">
-    <span class="post-date">{{ post.date | date: "%Y/%d/%m" }}</span>
-    <h3>{{ post.title }}</h3>
+    <div class="imgContainer">
+      <div class="imgBox" style="background-image:url('{{ post.image }}');"></div>
+    </div>
+    <!-- <span class="post-date">{{ post.date | date: "%Y/%d/%m" }}</span> -->
+    <h4>{{ post.title }}</h4>
     <div>
         {{ post.excerpt | markdownify | append: '<span><div class="readme button">LIESMICH.LOL</div></span>' }} 
     </div>
   </a>
     {% unless forloop.last %}
-      <hr>
+      <hr class="sml">
     {% endunless %}
     
   {% endfor %}

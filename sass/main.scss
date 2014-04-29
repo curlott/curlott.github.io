@@ -1,5 +1,5 @@
 // @import "compass/reset";
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700|Pacifico);
 /*****************************************************************************/
 /*
 /* Common
@@ -57,6 +57,10 @@ hr {
     border-bottom: 36px solid gainsboro;
     border-top: 2px solid lightgrey;
     margin: 0;
+    &.sml {
+
+        border-bottom: 12px solid gainsboro;
+    }
 }
 header, footer, article {
     
@@ -82,13 +86,6 @@ header {
         width: auto;
         margin-top: -10px;
         transition: 0.3s;
-    }
-    img:hover {
-        max-height: 440px;
-        margin-bottom: -20px;
-        margin-top: -30px;
-
-    
     }
 }
 header span {
@@ -203,6 +200,7 @@ article iframe {
 div.headline-container {
     margin: 12px 12px 36px 12px;
     h1 {
+        width: 100%;
         margin: 24px 0px 16px 0;
         display: inline-block;
     }
@@ -215,24 +213,24 @@ span.tag {
     letter-spacing: 0.04em;
     line-height: 0.5em;
     color: dimgray;
-    display: inline-block;
+    display: none;
 
     font-weight: bold;
     
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 3px;
-    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-    -moz-box-shadow: 0px 3px 3px #888;
-    -webkit-box-shadow: 0px 3px 3px #888;
-    box-shadow: 0px 3px 3px #888;
-    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
-    /*Shadows look very different in IE (Only cardinal directions supported)*/
-    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-    /*Element should have a background-color*/
-    /*All filters must be placed together*/
-    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    border-radius: 5px;
+    // /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    // -moz-box-shadow: 0px 3px 3px #888;
+    // -webkit-box-shadow: 0px 3px 3px #888;
+    // box-shadow: 0px 3px 3px #888;
+    // filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 180, color = '#000000');
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 180, Color = '#000000')";
+    // /*Shadows look very different in IE (Only cardinal directions supported)*/
+    // /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    // /*Element should have a background-color*/
+    // /*All filters must be placed together*/
+    // /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 
     
@@ -258,15 +256,17 @@ span.tag:before {
 
 }
 h1 {
+
     margin: 6px 12px;
     padding: 0 6px;
     
     background-color: dodgerblue;
     color: white;
     font-size: 2em;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.1em;
     line-height: 1.2em; 
     text-transform: uppercase;
+
 
     // float: left;
 
@@ -293,13 +293,17 @@ h1 {
 #markdown-toc {
     padding-right: 12px;
     margin: 1.6em 0;
+
+    & > li > ul {
+        display: none;
+    }
 }
 h2 {
     display: inline-block;
     font-size: 1.5em;
     background-color: mediumslateblue;
     color: white;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.2em;
     line-height: 1.2em; 
     text-transform: uppercase;
     margin-left: 12px;
@@ -327,12 +331,21 @@ h3, h4, h5, h6 {
     margin-left: 12px;
     margin-right: 12px;
 }
+h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+}
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
 h1:before, h2:before { 
     content: "//" "\0000a0"; 
 }
 p > i, em {
     color: deeppink;
     font-style: italic;
+    letter-spacing: 0.07em;
 }
 a {
     color: mediumseagreen;
@@ -366,10 +379,50 @@ a[href^="http:"]:after, a[href^="https:"]:after{
 }
 a.anchor-block {
     display: block;
+    background-size: cover;
     color: inherit!important;
     text-shadow: inherit!important;
     &:hover {
         background-color: rgb(238, 238, 238);
+        .imgContainer {
+
+            webkit-box-shadow: inset 0px 0px 150px #000;
+            box-shadow: inset 0px 0px 150px #000;
+            .imgBox {
+                webkit-box-shadow: inset 0px 0px 40px #000;
+                box-shadow: inset 0px 0px 40px #000;
+
+                width: 104%;
+                height: 110%;
+                top:-5%;
+                left:-2%;
+
+                background-size: cover;
+                background-position: left center;
+                transition: 0.2s;
+            }
+        }
+    }
+    .imgContainer {
+        position: relative;
+        width: 100%;
+        height: 140px;
+        overflow: hidden;        
+        webkit-box-shadow: inset 0px 0px 80px #000;
+        box-shadow: inset 0px 0px 80px #000;
+        .imgBox {
+            position: absolute;
+            webkit-box-shadow: inset 0px 0px 60px #000;
+            box-shadow: inset 0px 0px 60px #000;
+
+            width: 100%;
+            height: 100%;
+            top:0%;
+            left:0%;
+            background-size: cover;
+            background-position: left center;
+            transition: 0.5s;
+        }
     }
 }
 p {

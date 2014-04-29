@@ -11,7 +11,11 @@ layout: default
     {{ page.excerpt | markdownify }}
 </div>
 {{ page.feature }}
+{% if page.image %}
+<p><img src="{{ page.image }}" alt=""></p>
+{% endif %}
 {{ content }}
+{% if page.comments == true %}
 <hr>
 <p>Das mit dem Experte sein habe ich nie verstanden. Falls dir etwas unklar ist oder du etwas zu berichtigen oder ergänzen hast, dann würde ich mich sehr über <em>dein Feedback</em> freuen.</p>
 <div id="disqus_thread"></div>
@@ -30,3 +34,4 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
