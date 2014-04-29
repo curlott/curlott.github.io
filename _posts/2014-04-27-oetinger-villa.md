@@ -23,7 +23,7 @@ tags:
 
 ##Corporate Identity? lol
 
-Kein Logo, keine Farben, keine Schrift, kein irgendwas. Das liegt natürlich daran, dass die Villa ein *Freiraum* für einen bunten Haufen an Menschen ist, die sich von so etwas nicht eingrenzen wollen.
+Kein Logo, keine Farben, keine Schrift, kein irgendwas. Das liegt natürlich daran, dass die Villa ein *Freiraum* für einen bunten Haufen an Menschen ist, die sich von so etwas nicht eingrenzen lassen wollen.
 
 Zum Glück wurde gerade ein neuer Flyer entwickelt. Dieser neue Flyer gab ein Layout vor, gab aber gleichzeitig die Freiheit, die Farben und das Cover monatlich zu wechseln.
 
