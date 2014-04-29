@@ -19,7 +19,7 @@ tags:
 
 ##Die Villa
 
-[Die Oetinger Villa](http://www.oetingervilla.de) ist Darmstadts Jugend- und Kulturzentrum in Selbstverwaltung. Für mich ist die *Villa* seit über 10 Jahren ein Ort der Inspiration. Ohne Villa hätte ich viele Sachen nicht erlebt, welche mich in meinem Leben geprägt haben. Sei es Musik, Menschen oder die Attitude des Selbermachens.
+[Die Oetinger Villa](http://www.oetingervilla.de) ist Darmstadts Jugend- und Kulturzentrum in Selbstverwaltung. Hier wird Kultur, Politik und Freiheit geplant, geprobt und umgesetzt. Für mich ist die *Villa* seit über 10 Jahren ein Ort der Inspiration. Ohne Villa hätte ich viele Sachen nicht erlebt, welche mich in meinem Leben geprägt haben. Sei es Musik, Menschen oder die *Attitude des Selbermachens*.
 
 ##Corporate Identity? lol
 
