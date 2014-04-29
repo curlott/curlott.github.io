@@ -382,7 +382,7 @@ a.anchor-block {
     background-size: cover;
     color: inherit!important;
     text-shadow: inherit!important;
-    &:hover {
+    &:hover, &:active {
         background-color: rgb(238, 238, 238);
         .imgContainer {
 

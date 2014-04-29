@@ -374,16 +374,16 @@ a.anchor-block {
   text-shadow: inherit !important;
 }
 /* line 385, ../sass/main.scss */
-a.anchor-block:hover {
+a.anchor-block:hover, a.anchor-block:active {
   background-color: #eeeeee;
 }
 /* line 387, ../sass/main.scss */
-a.anchor-block:hover .imgContainer {
+a.anchor-block:hover .imgContainer, a.anchor-block:active .imgContainer {
   webkit-box-shadow: inset 0px 0px 150px #000;
   box-shadow: inset 0px 0px 150px #000;
 }
 /* line 391, ../sass/main.scss */
-a.anchor-block:hover .imgContainer .imgBox {
+a.anchor-block:hover .imgContainer .imgBox, a.anchor-block:active .imgContainer .imgBox {
   webkit-box-shadow: inset 0px 0px 40px #000;
   box-shadow: inset 0px 0px 40px #000;
   width: 104%;
