@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OetingerVilla.de
+title: Homepage der Oetinger Villa
 excerpt: DAS Kulturzenturm in Darmstadt brauchte eine neue Präsenz im Internet. Die neu eingerichteten PR AG und *Dave* erstellten zusammen eine schlichte aber auch moderne neue Homepage.
 image: /images/project_oetinger_villa.jpg
 date:   2014-04-27 10:00:00
