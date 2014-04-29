@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Homepage der Oetinger Villa
-excerpt: DAS Kulturzenturm in Darmstadt brauchte eine neue Präsenz im Internet. Die neu eingerichteten PR AG und *Dave* erstellten zusammen eine schlichte aber auch moderne neue Homepage.
+excerpt: DAS Kulturzenturm in Darmstadt brauchte eine neue Präsenz im Internet. Die neu eingerichtete PR AG und *Dave* erstellten zusammen eine schlichte aber auch moderne neue Homepage.
 og-excerpt: DAS Kulturzenturm in Darmstadt brauchte eine neue Präsenz im Internet. Die neu eingerichteten PR AG und Dave erstellten zusammen eine schlichte aber auch moderne neue Homepage.
 image: /images/project_oetinger_villa.jpg
 date:   2014-04-27 10:00:00
@@ -35,7 +35,7 @@ Zusammen mit dem neuen Flyer kam auch der Gedanke auf, eine neue Homepage zu ers
 - Analyse der Inhalte
 - Layout und Design anhand des neuen Flyers
 - Entwicklung eines *responsiven*, "mobile first" Templates für *Wordpress*
-- Entwicklung eines Systems, welches die *monatlich wechselnden Farben* und Cover des Flyers auch Online umsetzt
+- Entwicklung eines Systems, welches die *monatlich wechselnden Farben* und Cover des Flyers auch Online umsetzt. Hier möchte ich auch mal das *dynamische Favicon* erwähnen 
 - Optimierungen für *Open Graph Protocol* und *SEO* 
 - *Backend* übersichtlich und *unzerstörbar* vor unerfahrenen Benutzern machen
 
