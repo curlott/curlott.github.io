@@ -45,4 +45,4 @@ Anfangs dachte ich mir, ich bastel einfach was kleines, einfaches. Es stellte si
 
 *Anpassung des Backends*, *dynamische Favicons*, *Interaction Design* für quasi eine *Web App*. Das war alles neu und aufregend.
 
-Ich bin gespannt, was hier in Zukunft noch passiert. Es wird noch einiges an Arbeit kommen, sobald die ersten Menschen darauf landen und zweitens sind noch ein paar Sachen geplant, die es noch nicht in den Release geschafft haben.
+Ich bin gespannt, was hier in Zukunft noch passiert. Es wird noch einiges an Arbeit kommen, sobald die ersten Menschen darauf landen. Außerdem sind noch ein paar Sachen geplant, die es noch nicht in den Release geschafft haben.
