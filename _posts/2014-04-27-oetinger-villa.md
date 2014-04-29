@@ -39,7 +39,7 @@ Zusammen mit dem neuen Flyer kam auch der Gedanke auf, eine neue Homepage zu ers
 - Optimierungen für *Open Graph Protocol* und *SEO* 
 - *Backend* übersichtlich und *unzerstörbar* vor unerfahrenen Benutzern machen
 
-## Ich habe unheimlich viel gelernt
+## Ich habe viel gelernt
 
 Anfangs dachte ich mir, ich bastel einfach etwas Kleines, Einfaches. Es stellte sich aber schnell raus, dass hier mehr nötig war. Dazu kam noch der eigene Ehrgeiz und *schwupps* war es auf einmal ein riesen Ding. 
 
